@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --background-color:#11121a;
+    --text-color:white;
+    --content-color:gray;
+    --button-color:rgb(62,68,254);  
+    --black-color:black;
+    --line-color:gray;
+    --hover-color:#222533;
+    --background-over:#1c1f2b; 
+    --input-background-color:#141414;
+    --input-border-color:#2b2b2b;
+ 
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text-color);
+     
+    
+
+}
+
+
+body{
+    background:var(--background-color);
+    line-height:1.5rem;
+    color:var(--text-color);
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    grid-template-columns: auto 1fr;
+ 
+
+}
+
+body{
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    width:6px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--button-color);
+    border-radius:10px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background:black; /* Optional: Set the track background */
+}
+
+
+
+
+
+
+
+/* _________________________________ADDED USER MANAGEMENT____________________________________________ */
+
+
+
+
+main{
+    position:relative;
+    top:115px;
+    left:100px;
+    width:90%;
+    z-index:1;
+    /* border:4px solid aqua; */
+    /* background:red; */
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    
+   
+    
+}   
+
+.Topic{
+    font-size:16px;
+    text-transform: uppercase;
+    background:var(--button-color);
+    border-radius:10px;
+    text-align: center;
+    
+    width:64.5em;;
+    height:60px;
+    /* margin-top:10px; */
+    padding-top:15px;
+    /* margin-bottom:20px; */
+    /* transform:translateY(-33px); */
+    /* box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491); */
+    border-radius:2px;
+    font-size:24px;
+
+    svg{
+        transform:translateY(3px);
+
+
+    }
+}
+
+
+
+.information{
+    position:relative;
+    left:0%;
+    /* transform:translateX(100px); */
+
+
+    height:250px;
+    width:400px;
+    border-left:5px solid var(--button-color);
+    /* background:var(--background-over); */
+    box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    font-size:14px;
+    border-radius:5px;
+    padding:20px;
+
+    li{
+        
+        list-style-type: none;
+        /* margin-top:10px; */
+        border-bottom:1px solid rgba(255, 255, 255, 0.445);
+        padding:20px 5px 0px 5px;
+
+        &:nth-child(2){
+            font-size:14px;
+        }
+
+        &:nth-child(3){
+            margin-bottom:30px;
+        }
+
+    }
+
+    p{
+        /* transform:translate(330px,-20px); */
+        margin-left:330px;
+        transform:translateY(-20px);
+        
+    }
+
+}
+
+
+/* ________________________________________ADD USER DETAILS_____________________________________ */
+
+
+.add_user{
+    font-size:18px;
+    border-radius:5px;
+    /* font-weight: bold; */
+    width:220px;
+    height:50px;
+    background:black;
+    border:none;
+    padding:3px 10px 8px 10px;
+    transition:200ms ease-in-out;
+    cursor:pointer;
+
+
+    &:hover{
+        padding-top:14px;
+        background:var(--button-color);
+        
+
+    }
+
+
+    svg{
+        transform:translateY(5px);
+        padding-right:4px;
+        transition:300ms ease-in-out;
+    }
+
+
+
+
+
+}
+
+/* javascript */
+
+.this_svg.rotation{
+    transform:rotate(180deg);
+}
+
+
+
+
+    
+ /* javascript */
+
+ .add_user_details.dekhau{
+    
+    opacity:1;
+    visibility:visible;
+    z-index:5;
+   
+    
+ }
+
+
+     
+ /* javascript */
+
+.blur{
+    filter:blur(10px);
+    /* pointer-events: none; */
+ }
+
+
+
+.add_user_details{
+
+    /* background:green; */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%); /* This centers the element */
+    z-index: 5;
+    /* top:50%;
+    left:50%;
+    translate:-50% -50%; */
+    /* border-left:5px solid var(--button-color); */
+   
+    /* background:var(--black-color); */
+     border:4px solid var(--button-color);
+    background:var(--background-over);
+    box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491);
+    width:max-content;
+    height:max-content;
+    padding:50px;
+    border-radius:10px;
+    box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491);
+ 
+    /* z-index:1000; */
+    transition:600ms ease-in-out;       
+    opacity:0;
+    visibility: hidden;
+    filter:none;
+    
+
+
+
+  
+
+    .divider{
+        display:flex;
+        flex-direction:row ;
+        gap:70px;
+        margin-bottom:20px;
+
+
+
+    }
+
+   h3 {
+    font-size:24px;
+    margin-bottom:20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+ 
+ 
+  label{
+     font-size:11px;
+     letter-spacing:1px;
+     line-height:24px;
+     text-transform:uppercase;
+     /* background:red; */
+     width:150px;
+ 
+    }
+ 
+  /* #email{
+     margin-bottom:4px;
+ 
+    } */
+ 
+ input{
+     height:40px;
+     width:20%;
+     /* background:brown; */
+     /* margin-top:3px; */
+     padding-left:20px;
+     caret-color: var(--button-color);
+     color:black;
+     border:3px solid transparent;
+     /* border-left:3px solid var(--button-color); */
+     /* background:transparent; */
+     border-radius:5px;
+     transition:box-shadow 0.4s linear, padding-top 0.2s ease-in-out;
+     font-size:14px;
+     margin-bottom:10px;
+
+     
+     
+ 
+    }
+
+    input:hover{
+        padding-top:5px;
+    }
+    
+ 
+ input:focus{
+     box-shadow:3px 3px 7px var(--button-color);
+     outline:none;
+     border:none;
+     padding-left:22px;
+ 
+ }
+
+
+ 
+ button{
+     margin-top:26px;
+     height:50px;
+     width:20%;
+
+     
+     color:var(--black-color);
+     font-size:20px;
+     background:var(--button-color);
+     border-radius:7px;
+     border:3px solid transparent;
+     color:var(--text-color);    
+     transition:200ms ease-in-out;
+ 
+  
+ }
+ 
+ button:hover{
+   padding-top:10px;
+ }
+
+
+
+
+ 
+ 
+
+
+ 
+ .close_register_btn svg{
+ 
+     position:absolute;
+     top:-20px;
+     right:160px;
+     transform:translateX(175px);
+     fill:grey;
+     transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+ 
+ 
+ }
+ 
+ 
+ .close_register_btn svg:hover{
+     fill:red;
+     filter:drop-shadow(0px 0px 5px rgba(255,0,0,1.9));
+     
+ }
+ 
+ }
+
+
+
+ 
+
+
+/* ______________________________________ADD USER DETAILS END_________________________________________________ */

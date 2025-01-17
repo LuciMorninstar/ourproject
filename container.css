@@ -1,0 +1,912 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --background-color:#11121a;
+    --text-color:white;
+    --content-color:gray;
+    --button-color:rgb(62,68,254);  
+    --black-color:black;
+    --line-color:gray;
+    --hover-color:#222533;
+    --background-over:#1c1f2b; 
+    --input-background-color:#141414;
+    --input-border-color:#2b2b2b;
+ 
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text-color);
+     
+    
+
+}
+
+
+body{
+    background:var(--background-color);
+    line-height:1.5rem;
+    color:var(--text-color);
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    grid-template-columns: auto 1fr;
+ 
+
+}
+
+body{
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    width:6px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--button-color);
+    border-radius:10px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background:black; /* Optional: Set the track background */
+}
+
+
+/*-----------------------NAV------------------------------------*/
+.container{
+    height:104px;
+    width:100%;
+    background:var(--black-color);
+    opacity:90%;
+    color:var(--text-color);
+    display:flex;
+    justify-content:flex-start;
+    position:fixed;
+    z-index:1;
+
+    
+ 
+}
+.container h1.logo{
+    width:auto;
+    height:70px;
+    font-family: "Audiowide", sans-serif;
+    font-size:37px;
+   /* background:red; */
+    margin-left:45%;
+    margin-top:31px;
+    background:linear-gradient(to left, blue, white);
+    background-clip:text;
+    color:transparent;
+ 
+ 
+}
+
+/*---------------------------------Search bar------------------------------*/
+
+.container .search{
+    /* background:purple;  */
+    margin-left:100px;
+    margin-top:30px;
+    width:505px;
+    
+}
+
+
+
+.container .search input{
+    height:40px;
+    width:350px;
+    background:var(--input-background-color);
+     /* background:red; */
+    color:var(--text-color);
+    padding-left:8px;
+    /* border-top-left-radius:10px;
+    border-bottom-right-radius:10px; */
+    border:1px solid var(--input-border-color);
+    caret-color:var(--button-color);
+    
+    transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+
+}
+
+/* .container .search input:hover  , .container .search input:focus{
+    transform:scale(1.03);
+    outline:none;
+} */
+
+.container .search input::placeholder{
+    color:var(--text-color);
+    /* font-family:cursive; */
+    opacity:0.6;
+
+}
+
+.container .search input:focus{
+    border:1px solid #2b2b2b;
+    outline:none;
+
+}
+
+
+
+#suggestions_list{
+    box-sizing:border-box;
+    background:var(--background-color);
+    position:absolute;
+    left:1097px;
+    top:70px;
+    z-index:1000;
+    width:350px;
+    padding:5px 7px 7px 7px;
+    /* height:290px; */
+    max-height: 289px;
+    overflow-y:hidden;
+    /* border-left:1px solid #2b2b2b;
+    border-bottom:1px solid #2b2b2b; */
+    /* box-shadow: 2px 2px 3px rgba(43, 43, 43, 0.5); */
+    border-left:1px solid #2b2b2b;
+    border-bottom:1px solid #2b2b2b;
+    border-right:1px solid #2b2b2b;
+    display:none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+
+
+}
+
+#suggestions_list.visible{
+    display:block;
+}
+
+
+#suggestions_list li{
+    list-style-type:none;
+    /* background:green; */
+    cursor:pointer;
+    padding:2px 3px;
+    width:100%;
+    height:90px;
+    transition: 300ms ease;
+    border-radius:5px;
+
+    
+
+    img{
+        height:70px;
+        width:80px;
+        padding:4px;
+        margin-top:10px;
+        float:left;
+        border-radius:5px;
+        /* height:40px; */
+    
+    }
+
+    .name{
+       
+        font-size:14px;
+        /* font-weight:bold;    */
+       max-height:40px;
+        overflow-y:hidden;
+        width:220px;
+        /* padding:2px 3px; */
+       padding:10px;
+        
+        
+        /* background:yellow; */
+
+    }
+    .address{
+        font-size:12px;
+        color:#b7b2b2;
+        /* background:orange; */
+        margin-left:90px;
+        text-align:start;
+        padding:0px 0px 10px 0px;
+
+    }
+    
+}
+
+#suggestions_list li:hover{
+    padding-left:9px;
+    background:#2b2b2b5d;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------Favorite ----------------------*/
+
+.container .search svg{
+    position:relative;
+    top:10px;
+    cursor:pointer;
+    opacity:1;
+    
+    right:30px;
+    transition:transform 0.3s linear;
+
+}
+
+
+
+.container .search .favorite{
+    position:relative;
+    top:10px;
+    left:20px;
+    fill:red;
+    transition:filter 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),transform 0.3s;
+    /* background:blue; */
+}
+
+.container .search .favorite:hover{
+    filter:drop-shadow(0px 0px 10px rgba(255,0,0,1.9));
+    transform:scale(1.5);
+}
+
+
+
+/*--------------------Login nav---------------*/
+.search .login{
+    position:relative;
+    left:470px;
+    bottom:37px;
+    width:120px;
+    height:35px;
+    text-transform:uppercase;
+    line-height:21px;
+    letter-spacing:1.25px;
+    text-align:center;
+    /* background-color: green; */
+    padding:6px;
+    border:2px solid var(--button-color);
+    transition:box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),transform 0.3;
+    cursor:pointer;
+    border-radius:5px;
+    text-align:center;  
+    
+  
+}
+.search .login  a{
+    text-decoration:none;
+    color:var(--text-color);
+
+}
+
+
+.search .login:hover{
+    box-shadow:0 0 10px var(--button-color);
+    transform:scale(1.04);
+
+}
+
+/*-----------------------NAV------------------------------------*/
+
+
+
+/*------------------------LOGIN FORM----------------**/
+.userlogin{
+    backdrop-filter: blur(10px); 
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    background:var(--black-color);
+    /* opacity: 90%; */
+    width:500px;
+    height:510px;
+    padding:60px;
+    border-radius:10px;
+
+    z-index:1000;
+
+    display:none;
+    /* display:block; */
+
+    .or{
+        margin-top:10px;
+        width: 100%;
+        text-align: center;
+        /* background-color: red; */
+        padding-top:25px 0px 5px 10px;
+
+
+    }
+
+    #login_as_admin{
+        width:110px;
+        height:30px;
+        font-size:10px;
+        
+        background:none;
+        border:1px solid var(--input-border-color);
+        transition:300ms ease-in-out;
+        padding:3px 0px 0px 0px;
+        text-align:center;
+        margin-top:5px;
+        margin-left:140px;
+        box-sizing: border-box;
+        cursor: pointer;
+        /* border-radius:5px; */
+
+        &:hover{
+            border:1px solid var(--button-color);
+            padding-top:7px;
+            color:var(--button-color);
+        }
+        
+
+    }
+}
+
+@keyframes slideup{
+    0%{
+        transform:translateY(100%);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+    }
+}
+
+
+
+
+
+ .userlogin h3{
+    text-align:center;
+    font-size:20px;
+    /* background:red; */
+}
+
+.userlogin label:nth-child(1),:nth-child(2){
+    font-size:11px;
+    letter-spacing:1px;    
+    line-height:24px;
+    
+    
+}
+.userlogin label{
+    text-transform:uppercase;
+}
+
+.userlogin #email{
+    margin-bottom:4px;
+}
+
+.userlogin #email,#password{
+    height:40px;
+    width:100%;
+    /* background:brown; */
+    margin-top:3px;
+    padding-left:10px;
+    caret-color: var(--button-color);
+    color:var(--text-color);
+    border:3px solid transparent;
+    border-left:3px solid var(--button-color);
+    background:transparent;
+    transition:box-shadow 0.4s linear;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.userlogin #email:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+    
+}
+
+.userlogin #password:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+}
+
+
+
+.forgot-password{
+    margin-top:20px;
+    text-align:end;
+    font-size:16px;
+    line-height:24px;
+    width:100%;
+    /* background:red; */
+   
+
+}
+.forgot-password a{
+ text-decoration:none;
+ color:var(--button-color);
+ transition:color 0.3s ease-in-out;
+}
+
+.userlogin button{
+    margin-top:26px;
+    height:40px;
+    width:100%;
+    color:var(--black-color);
+    font-size:20px;
+    background:var(--button-color);
+    border-radius:7px;
+    border:3px solid transparent;
+    color:var(--text-color);    
+    transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      cursor: pointer;
+ 
+}
+
+
+.userlogin button:hover{
+    transform:scale(1.07);
+}
+
+.noaccount p{
+    /* background:green; */
+    height:40px;
+    width:100%;
+    text-align:start;
+    font-size:16px;
+    text-align:center;
+    margin-top:30px;
+   
+}
+
+.noaccount a{
+    text-decoration:none;
+    color:var(--button-color);
+    transition: color 0.3s ease-in-out;
+
+}
+
+.forgot-password a:hover, .noaccount a:hover{
+
+    color:lightgreen;
+    
+}
+
+.close_btn svg{
+    position:absolute;
+    top:-20px;
+    right:160px;
+    transform:translateX(175px);
+    fill:var(--content-color);
+    transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    
+} 
+
+    /* --------------javascript--------------- */
+    
+
+
+
+.close_btn svg:hover{
+    fill:red;
+    filter:drop-shadow(0px 0px 5px rgba(255,0,0,1.9));
+    
+}
+
+
+/* _____________________________LOGIN AS ADMIN_______________________________ */
+
+
+
+/*------------------------LOGIN FORM----------------**/
+.adminlogin{
+    backdrop-filter: blur(10px); 
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    background:var(--black-color);
+    /* opacity: 90%; */
+    width:460px;
+    height:400px;
+    padding:60px;
+    border-radius:10px;
+
+    z-index:1000;
+
+    display:none;
+
+    
+}
+
+@keyframes slideup{
+    0%{
+        transform:translateY(100%);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+    }
+}
+
+
+
+
+
+ .adminlogin h3{
+    text-align:center;
+    font-size:20px;
+    /* background:red; */
+}
+
+.adminlogin label:nth-child(1),:nth-child(2){
+    font-size:11px;
+    letter-spacing:1px;    
+    line-height:24px;
+    
+    
+}
+.adminlogin label{
+    text-transform:uppercase;
+}
+
+.adminlogin #email{
+    margin-bottom:4px;
+}
+
+.adminlogin #email,#password{
+    height:40px;
+    width:100%;
+    /* background:brown; */
+    margin-top:3px;
+    padding-left:10px;
+    caret-color: var(--button-color);
+    color:var(--text-color);
+    border:3px solid transparent;
+    border-left:3px solid var(--button-color);
+    background:transparent;
+    transition:box-shadow 0.4s linear;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.adminlogin #email:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+    
+}
+
+.adminlogin #password:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+}
+
+
+
+.forgot-password{
+    margin-top:20px;
+    text-align:end;
+    font-size:16px;
+    line-height:24px;
+    width:100%;
+    /* background:red; */
+   
+
+}
+.forgot-password a{
+ text-decoration:none;
+ color:var(--button-color);
+ transition:color 0.3s ease-in-out;
+}
+
+.adminlogin button{
+    margin-top:26px;
+    height:40px;
+    width:100%;
+    color:var(--black-color);
+    font-size:20px;
+    background:var(--button-color);
+    border-radius:7px;
+    border:3px solid transparent;
+    color:var(--text-color);    
+    transition:transform 0.3s ease-in-out;
+      cursor: pointer;
+ 
+}
+
+
+.adminlogin button:hover{
+    transform:scale(1.07);
+}
+
+
+
+.close_admin_btn svg{
+    position:absolute;
+    top:-20px;
+    right:160px;
+    transform:translateX(175px);
+    fill:var(--content-color);
+    transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    
+} 
+
+    /* --------------javascript--------------- */
+    
+
+
+
+.close_admin_btn svg:hover{
+    fill:red;
+    filter:drop-shadow(0px 0px 5px rgba(255,0,0,1.9));
+    
+}
+
+
+
+
+/*------------------------LOGIN FORM-- finsihed--------------**/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ________________________________________REGISTER FORM _______  START______________________________ */
+
+.register{
+
+    background:green;
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    background:var(--black-color);
+    width:500px;
+    height:630px;
+    padding:60px;
+    border-radius:10px;
+ 
+    z-index:1000;
+    transition:300ms ease-in-out;
+
+
+
+    display:none;
+    /* display:block; */
+
+ 
+
+    .oneline{
+
+        display:flex;
+        flex-direction:row;
+        gap:30px;
+
+       .column{
+        display:flex;
+        flex-direction:column;
+
+       }
+
+       #dob{
+        background:rgba(255, 255, 255, 0.824);
+        color:rgb(92, 90, 90);
+
+    }
+
+
+
+        
+       
+    }
+
+    .choose{
+        
+        display:flex;
+        flex-direction:row;
+        gap:25px;
+        margin-bottom:10px;
+        margin-top:5px;
+
+        input{
+            font-size:20px;
+        }
+
+      
+
+    }
+ 
+ 
+  h3{
+     text-align:center;
+     font-size:20px;
+ 
+    }
+ 
+  label{
+     font-size:9px;
+     letter-spacing:1px;
+     line-height:24px;
+     text-transform:uppercase;
+ 
+    }
+ 
+  #email{
+     margin-bottom:4px;
+ 
+    }
+ 
+  #email,#password,#number, #first_name, #last_name, #dob, #address{
+     height:35px;
+     width:100%;
+     /* background:brown; */
+     margin-top:3px;
+     padding-left:10px;
+     caret-color: var(--button-color);
+     color:var(--text-color);
+     border:3px solid transparent;
+     border-left:3px solid var(--button-color);
+     background:transparent;
+     transition:box-shadow 0.4s linear;
+     font-size:14px;
+     margin-bottom:10px;
+ 
+    }
+ 
+ #first_name:focus{
+     box-shadow:3px 3px 7px var(--button-color);
+     outline:none;
+     border:none;
+ 
+ }
+
+ 
+ #dob:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+
+}
+
+#address:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+
+}
+
+  
+ #last_name:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+
+}
+
+ 
+ #email:focus{
+     box-shadow:3px 3px 7px var(--button-color);
+     outline:none;
+     border:none;
+     
+ }
+ 
+ #password:focus{
+     box-shadow:3px 3px 7px var(--button-color);
+     outline:none;
+     border:none;
+ }
+ 
+ #number:focus{
+     box-shadow:3px 3px 7px var(--button-color);
+     outline:none;
+     border:none;
+ }
+ 
+ button{
+     margin-top:10px;
+     height:40px;
+     width:100%;
+     color:var(--black-color);
+     font-size:20px;
+     background:var(--button-color);
+     border-radius:7px;
+     border:3px solid transparent;
+     color:var(--text-color);    
+     transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+ 
+  
+ }
+ 
+ button:hover{
+     transform:scale(1.07);
+ }
+ 
+ 
+ 
+ .alreadyaccount p{
+     /* background:green; */
+     height:40px;
+     width:100%;
+     text-align:start;
+     font-size:16px;
+     text-align:center;
+     margin-top:30px;
+    
+ }
+ 
+ .alreadyaccount a{
+     text-decoration:none;
+     color:var(--button-color);
+     transition: color 0.3s ease-in-out;
+ 
+ }
+ 
+  .alreadyaccount a:hover{
+ 
+     color:lightgreen;
+     
+ }
+ 
+ 
+ .close_register_btn svg{
+ 
+     position:absolute;
+     top:-20px;
+     right:160px;
+     transform:translateX(175px);
+     fill:grey;
+     transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+ 
+ 
+ }
+ 
+ 
+ .close_register_btn svg:hover{
+     fill:red;
+     filter:drop-shadow(0px 0px 5px rgba(255,0,0,1.9));
+     
+ }
+ 
+ }
+
+
+
+ /* _______________________________________FOR JAVASCRIPT____________________________________ */
+.userlogin.show, .register.show, .adminlogin.show{
+    display:block;
+    animation:slideup 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.enableblur{
+    filter:blur(5px);
+
+}
+.disablescroll{
+    overflow:hidden;
+}

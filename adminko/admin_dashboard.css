@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --background-color:#11121a;
+    --text-color:white;
+    --content-color:gray;
+    --button-color:rgb(62,68,254);  
+    --black-color:black;
+    --line-color:gray;
+    --hover-color:#222533;
+    --background-over:#1c1f2b; 
+    --input-background-color:#141414;
+    --input-border-color:#2b2b2b;
+ 
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text-color);
+     
+    
+
+}
+
+
+body{
+    background:var(--background-color);
+    line-height:1.5rem;
+    color:var(--text-color);
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    grid-template-columns: auto 1fr;
+ 
+
+}
+
+body{
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    width:6px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--button-color);
+    border-radius:10px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background:black; /* Optional: Set the track background */
+}
+
+
+
+
+
+/* _________________________________ADDED ADMIN DASHBOARD____________________________________________ */
+
+
+
+
+main{
+    position:relative;
+    top:110px;
+    left:100px;
+    /* border:4px solid aqua; */
+    padding:5px;
+    width:90%;
+    height:80vh;
+    display:flex;
+    flex-direction:row;
+    gap:30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:flex-start;
+    
+
+
+  
+}
+
+.Topic{
+    font-size:16px;
+    text-transform: uppercase;
+    background:var(--button-color);
+    border-radius:10px;
+    text-align: center;
+    
+    width:64.5em;;
+    height:60px;
+    /* margin-top:10px; */
+    padding-top:15px;
+    /* margin-bottom:20px; */
+    /* transform:translateY(-33px); */
+    /* box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491); */
+    border-radius:2px;
+    font-size:24px;
+    margin-bottom:20px;
+
+    svg{
+        transform:translateY(3px);
+
+
+    }
+}
+
+
+
+
+
+.adminbox{
+    
+
+    /* background:var(--background-over); */
+    height:275px;
+    width:400px;
+    border-radius:5px;
+    padding:25px 5px 5px 5px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:4rem;
+    /* box-shadow: 6px 6px 10px rgba(8, 8, 14, 0.8); */
+    border-left:5px solid var(--button-color);
+    /* background:var(--background-over); */
+    box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491);
+    /* border-left:8px solid var(--button-color); */
+
+    /* .Heading{
+        background-color:var(--each_background_color);
+        width:170px;
+        height:35px;
+        font-size:large;
+        font-weight:600;
+        text-align:center;
+        transform:translateX(-100px);
+        padding-top:5px;
+    } */
+
+ 
+
+    svg{
+        /* background:red; */
+        /* padding-top:3px; */
+        transform:translateY(6px);
+        height:30px;
+        width:30px;
+        
+
+    
+        fill:var(--button-color);
+
+    }
+    
+    span{
+        font-size:24px;
+        font-weight:400;
+        /* background:red; */
+        margin-right:15px;
+        /* background:linear-gradient(to left, skyblue, blue); */
+        /* border-left:6px solid var(--button-color); */
+        padding:0px 0px 3px 10px;
+        /* border-radius:10px; */
+
+       
+    }
+
+    p{
+        font-size:40px;
+        font-family:cursive;
+
+
+    }
+
+    button{
+        width:130px;
+        height:45px;
+        
+        
+    
+        cursor:pointer;
+        border:none;
+        background:black;
+        color:white;
+        font-size:14px;
+        border-radius: 3px;
+        padding:3px 4px;
+        transition:0.2s ease-in-out;
+
+        &:hover{
+            background:var(--button-color);
+            padding-top:15px;
+
+        }
+     
+    
+    }
+
+ 
+
+
+
+}
+
+

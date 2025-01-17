@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --background-color:#11121a;
+    --text-color:white;
+    --content-color:gray;
+    --button-color:rgb(62,68,254);  
+    --black-color:black;
+    --line-color:gray;
+    --hover-color:#222533;
+    --background-over:#1c1f2b; 
+    --input-background-color:#141414;
+    --input-border-color:#2b2b2b;
+ 
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text-color);
+     
+    
+
+}
+
+
+body{
+    background:var(--background-color);
+    line-height:1.5rem;
+    color:var(--text-color);
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    grid-template-columns: auto 1fr;
+ 
+
+}
+
+body{
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    width:6px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--button-color);
+    border-radius:10px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background:black; /* Optional: Set the track background */
+}
+
+
+.wrap{
+    height:104px;
+    background:var(--black-color);
+    position:fixed;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    opacity:90%;
+    color:var(--text-color);
+    /* background:red; */
+    justify-content: center;
+    z-index:5;
+
+}
+
+.logo{
+    width:auto;
+    height:70px;
+    font-family: "Audiowide", sans-serif;
+    font-size:37px;
+   /* background:red; */
+    /* margin-left:45%; */
+    margin-top:35px;
+    background:linear-gradient(to left, blue, white);
+    background-clip:text;
+    color:transparent;
+    cursor:pointer;
+ 
+
+}
+
+.logout{
+    /* background:blue; */
+    position:absolute;
+    left:90%;
+    top:35px;
+    width:120px;
+    height:35px;
+    text-transform:uppercase;
+    line-height:21px;
+    letter-spacing:1.25px;
+    text-align:center;
+    padding:6px;
+    border:2px solid var(--button-color);
+    transition:box-shadow 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),transform 0.3;
+    cursor:pointer;
+    border-radius:5px;
+    text-align:center; 
+
+    a{
+        text-decoration:none;
+        color:var(--text-color);
+    
+    }
+
+    &:hover{
+        box-shadow:0 0 10px var(--button-color);
+        transform:scale(1.04);
+
+    }
+    
+
+
+}
+
+
+
+
+
+
