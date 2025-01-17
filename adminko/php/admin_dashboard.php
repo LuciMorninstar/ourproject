@@ -1,10 +1,10 @@
 <?php
-include("admin_container.php");
+include("./admin_container.php");
 
 ?>
 
 <?php
-include("admin_sidebar.php");
+include("./admin_sidebar.php");
 
 ?>
 
@@ -16,7 +16,7 @@ include("admin_sidebar.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="admin_dashboard.css">
+    <link rel="stylesheet" href="../css/admin_dashboard.css">
 </head>
 <body>
 
@@ -116,6 +116,6 @@ include("admin_sidebar.php");
 
 
 
-<script src="admin_dashboard.js" defer></script>
+<script src="../js/admin_dashboard.js" defer></script>
 </body>
 </html>

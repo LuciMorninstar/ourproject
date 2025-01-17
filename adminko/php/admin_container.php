@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="admin_container.css">
+    <link rel="stylesheet" href="../css/admin_container.css">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
     
 
     <div class="logout">
-        <a href="../main.php"><p id="logout">logout</p></a>
+        <a href="../../php/main.php"><p id="logout">logout</p></a>
     </div>
 
 </div>
@@ -40,6 +40,6 @@
 
 
 
-    <script src="admin_container.js" defer></script>
+    <script src="../js/admin_container.js" defer></script>
 </body>
 </html>

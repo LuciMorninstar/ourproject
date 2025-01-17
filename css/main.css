@@ -145,7 +145,7 @@ body::-webkit-scrollbar-track {
     transform:translateX(-12px);
 }
 
-
+/* 
 @property --angle{
 	syntax:"<angle>";
 	initial-value:0deg;
@@ -180,7 +180,7 @@ body::-webkit-scrollbar-track {
 		--angle:360deg;
 	}
 }
-
+ */
 
 
  .box,.box1{
