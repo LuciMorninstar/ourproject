@@ -5,7 +5,7 @@
 
         "hostel_name": "Great Wall Boy's Hostel",
         "hostel_address": "Subidhanagar, Tinkune, Kathmandu",
-        "hostel_image" :"images/DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
        
@@ -17,7 +17,7 @@
         
         "hostel_name": "Pathibhara Boy's Hostel",
         "hostel_address": "Balkumari, Kathmandu",
-        "hostel_image" :"images/New-Pathibhara-Boys-Hostel-Contact-1.jpg",
+        "hostel_image" :"../images/New-Pathibhara-Boys-Hostel-Contact-1.jpg",
         "intro":"Pathibhara Boy's Hostel is located on  Balkumari near NCIT& NIST Lalitpur college Hospital, Kathmandu .Pathibhara Boy's  Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -30,7 +30,7 @@
 
         "hostel_name": "Adriz Boy's Hostel",
         "hostel_address": "New Baneshwor, Kathmandu",
-        "hostel_image" :"images/Adriz-boys-hostel-New-Baneswor-1024x768.jpg",
+        "hostel_image" :"../images/Adriz-boys-hostel-New-Baneswor-1024x768.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -42,7 +42,7 @@
         
         "hostel_name": "Nava Aadarsha deluxe Boy's Hostel",
         "hostel_address": "Bagbazar putalisadak, Kathmandu",
-        "hostel_image" :"images/WhatsApp-Image-2024-01-10-at-5.34.18-PM-1-1024x576.jpeg",
+        "hostel_image" :"../images/WhatsApp-Image-2024-01-10-at-5.34.18-PM-1-1024x576.jpeg",
         "intro":"Pathibhara Boy's Hostel is located on  Balkumari near NCIT& NIST Lalitpur college Hospital, Kathmandu .Pathibhara Boy's  Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -53,7 +53,7 @@
 
         "hostel_name": "Om Boy's Hostel",
         "hostel_address": "New Baneshwor, Kathmandu",
-        "hostel_image" :"images/Om-Boys-Hostel-New-Baneshwor-Thapagaun-2-bed.png",
+        "hostel_image" :"../images/Om-Boys-Hostel-New-Baneshwor-Thapagaun-2-bed.png",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -64,7 +64,7 @@
 
         "hostel_name": "Roommate Boy's Hostel",
         "hostel_address": "M8VR+7HX, Kathmandu 44600, Kathmandu",
-        "hostel_image" :"images/roommate_boy's_hostel.jpg",
+        "hostel_image" :"../images/roommate_boy's_hostel.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
     
@@ -75,7 +75,7 @@
         
         "hostel_name": "AOS Boy's Hostel",
         "hostel_address": "Aditi Marg, Tinkune, Kathmandu",
-        "hostel_image" :"images/New-Pathibhara-Boys-Hostel-Contact-1.jpg",
+        "hostel_image" :"../images/New-Pathibhara-Boys-Hostel-Contact-1.jpg",
         "intro":"Pathibhara Boy's Hostel is located on  Balkumari near NCIT& NIST Lalitpur college Hospital, Kathmandu .Pathibhara Boy's  Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -86,7 +86,7 @@
 
         "hostel_name": "City Holiday Hostel",
         "hostel_address": "putalisadak, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -97,7 +97,7 @@
 
         "hostel_name": "Ananya's Boy's Hostel",
         "hostel_address": "Mid-Baneshwor, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -108,7 +108,7 @@
 
         "hostel_name": "Kalash Boy's Hostel",
         "hostel_address": "New baneshow, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -119,7 +119,7 @@
 
         "hostel_name": "Liberty Boy's Hostel",
         "hostel_address": "Suruchi Marg, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -130,7 +130,7 @@
 
         "hostel_name": "Prarambha Boy's Hostel",
         "hostel_address": "Baneshwor, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -141,7 +141,7 @@
 
         "hostel_name": "Pulchowk Boy's Hostel",
         "hostel_address": "lalitpur, pulchowk, kupondole",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -153,7 +153,7 @@
 
         "hostel_name": "Rauniyar Boy's Hostel",
         "hostel_address": "Near CCRC college, balkumari",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -165,7 +165,7 @@
 
         "hostel_name": "Roshan Boy's Hostel",
         "hostel_address": "Near Sishir Mall, babarmahal",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -177,7 +177,7 @@
 
         "hostel_name": "Supreme Boy's Hostel",
         "hostel_address": "Kalanki, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -188,7 +188,7 @@
 
         "hostel_name": "Times Boy's Hostel",
         "hostel_address": "putalisadak, Kathmandu",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -199,7 +199,7 @@
 
         "hostel_name": "Tulsi Boy's Hostel",
         "hostel_address": "Near Texas International college, Chabahil ",
-        "hostel_image" :"DSC8838-scaled-1.jpg",
+        "hostel_image" :"../images/DSC8838-scaled-1.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -215,7 +215,7 @@
 
         "hostel_name": "Tulasha Girl's Hostel",
         "hostel_address": "putalisadak,kathmandu ",
-        "hostel_image" :"images/Tulasha_girls.jpeg",
+        "hostel_image" :"../images/Tulasha_girls.jpeg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -229,7 +229,7 @@
 
         "hostel_name": "Sonarch Girl's Hostel",
         "hostel_address": "Sankhamul,kathmandu ",
-        "hostel_image" :"images/Sonarch_girl's.png",
+        "hostel_image" :"../images/Sonarch_girl's.png",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -241,7 +241,7 @@
 
         "hostel_name": "Kiva Girl's Hostel",
         "hostel_address": "Anamnagar, Hanumanthan ",
-        "hostel_image" :"images/kiva_girls.jpg",
+        "hostel_image" :"../images/kiva_girls.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -253,7 +253,7 @@
 
         "hostel_name": "Himalayan Heaven Hostel",
         "hostel_address": "Dilli-Bazar height Marg,kathmandu ",
-        "hostel_image" :"images/Himalayan_heaven_girls.jpg",
+        "hostel_image" :"../images/Himalayan_heaven_girls.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -267,7 +267,7 @@
 
         "hostel_name": "Sukhita Girl's Home Pvt.Ltd",
         "hostel_address": "Sankhamul,kathmandu ",
-        "hostel_image" :"images/Himalayan_heaven_girls.jpg",
+        "hostel_image" :"../images/Himalayan_heaven_girls.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -280,7 +280,7 @@
 
         "hostel_name": "Monsoon Girl's Hostel ",
         "hostel_address": "Tokha Municipality,kathmandu ",
-        "hostel_image" :"images/Himalayan_heaven_girls.jpg",
+        "hostel_image" :"../images/Himalayan_heaven_girls.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         
@@ -292,7 +292,7 @@
 
         "hostel_name": "Kathmandu Cozy Stay ",
         "hostel_address": "New Baneshwor,kathmandu ",
-        "hostel_image" :"images/Himalayan_heaven_girls.jpg",
+        "hostel_image" :"../images/Himalayan_heaven_girls.jpg",
         "intro":"Greatwall Boy's Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Greatwall Boy's Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
         "status":"Available"
         

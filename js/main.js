@@ -83,7 +83,7 @@ boxes2.forEach((box)=>{
 
 // ____________________TOP OFFERS____________________________________
 
-fetch("Top_offers.json")
+fetch("../json/Top_offers.json")
 .then(response=>{
     if(!response.ok){
         throw new Error("Status code  ${response.status}found");
@@ -109,7 +109,7 @@ fetch("Top_offers.json")
 
 // __________________________________FEATURING ONES____________________________
 
-fetch("featuring_ones.json")
+fetch("../json/featuring_ones.json")
 .then(response=>{
     if(!response.ok){
         throw new Error("Status code  ${response.status} found");

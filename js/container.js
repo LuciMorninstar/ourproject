@@ -18,7 +18,7 @@ document.addEventListener("click", () => {
 
 let hosteldata = [];
 
-fetch("improved2.json")
+fetch("../json/improved2.json")
 .then(response => response.json())
 .then(data =>{
     hostelsdata = data;

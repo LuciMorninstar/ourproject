@@ -1,10 +1,9 @@
-
 <?php 
-include("container.php") 
+include("./container.php");
  ?>
 
 <?php 
-include("sidebar.php") 
+include("./sidebar.php"); 
 
 ?>
 
@@ -17,7 +16,7 @@ include("sidebar.php")
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="inside2.css">
+    <link rel="stylesheet" href="../css/inside2.css">
 
 </head>
 <body>
@@ -228,13 +227,12 @@ include("sidebar.php")
 
 
 
-    <script src="inside2.js" defer></script>
+    <script src="../js/inside2.js" defer></script>
     
 </body>
 </html>
 
 
-
 <?php 
-include("footer_social.php")
+include("./footer_social.php");
 ?>

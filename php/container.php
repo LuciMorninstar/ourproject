@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="../css/container.css">
 </head>
 <body>
 
@@ -52,19 +52,19 @@
   
 <?php
 
-include("./forms/userlogin.php");
+include("../forms/userlogin.php");
 
 ?>
 
 <?php
 
-include("./forms/adminlogin.php");
+include("../forms/adminlogin.php");
 
 ?>
 
 <?php
 
-include("./forms/register.php");
+include("../forms/register.php");
 
 ?>
 
@@ -75,7 +75,7 @@ include("./forms/register.php");
 
 
 
-    <script src="container.js" defer></script>
+    <script src="../js/container.js" defer></script>
 </body>
 </html>
 
