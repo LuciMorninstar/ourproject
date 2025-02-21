@@ -1,4 +1,9 @@
 <?php
+session_start();
+?>
+
+
+<?php
 include("./admin_container.php");
 
 ?>
@@ -81,31 +86,31 @@ include("./admin_sidebar.php");
 
 <div class="divider">
     <label for="first_name" >First Name</label><br>
-    <input type="text" id="first_name" placeholder="first_name" required autocomplete="first_name"><br>
+    <input type="text" id="first_name" name = "first_name" placeholder="first_name" required autocomplete="first_name"><br>
 
     <label for="middle_name" >Middle Name</label><br>
-    <input type="text" id="middle_name" placeholder="middle_name" required autocomplete="middle_name"><br>
+    <input type="text" id="middle_name" name = "middle_name" placeholder="middle_name" required autocomplete="middle_name"><br>
 
 </div>
 
 
 <div class="divider">
     <label for="last_name" >Last Name</label><br>
-    <input type="text" id="last_name" placeholder="last_name" required autocomplete="last_name"><br>
+    <input type="text" id="last_name" name = "last_name" placeholder="last_name" required autocomplete="last_name"><br>
 
     <label for="address" >Address</label><br>
-    <input type="text" id="address" placeholder="address" required autocomplete="address"><br>
+    <input type="text" id="address" name = "address" placeholder="address" required autocomplete="address"><br>
 
     </div>
 
     <div class="divider">   
 
     <label for="phone_number" >Phone Number</label><br>
-    <input type="text" id="phone_number" placeholder="phone_number" required autocomplete="phone_number"><br>
+    <input type="text" id="phone_number" name = "number" placeholder="phone_number" required autocomplete="phone_number"><br>
 
 
     <label for="email">Email address</label><br>
-    <input type="email" id="email" placeholder="name@gmail.com"required autocomplete="email"><br>
+    <input type="email" id="email" name = "email" placeholder="name@gmail.com"required autocomplete="email"><br>
 
     </div>
 
@@ -114,11 +119,11 @@ include("./admin_sidebar.php");
 
         
     <label for="rendted_hostel" >Rented Hostel</label><br>
-    <input type="text"  id="rendted_hostel" placeholder="rented_hostel"  autocomplete="rendted_hostel"><br>
+    <input type="text"  id="rendted_hostel" name = "rented_hostel" placeholder="rented_hostel"  autocomplete="rendted_hostel"><br>
 
 
     <label for="number_of_rooms" >Number of Rooms</label><br>
-    <input type="text" id="number_of_rooms" placeholder="number_of_rooms"  autocomplete="number_of_rooms"><br>
+    <input type="text" id="number_of_rooms" name = "number_of_rooms" placeholder="number_of_rooms"  autocomplete="number_of_rooms"><br>
  
 
     
@@ -132,10 +137,10 @@ include("./admin_sidebar.php");
 
         
         <label for="booking_date" >Booking Date</label><br>
-        <input type="datetime-local" id="booking_date" placeholder="booking_date"  autocomplete="booking_date"><br>
+        <input type="datetime-local" id="booking_date" name = "booking_date" placeholder="booking_date"  autocomplete="booking_date"><br>
 
         <label for="arrival_date" >Arrival Date</label><br>
-        <input type="datetime-local" id="arrival_date" placeholder="arrival_date"  autocomplete="arrival_date"><br>
+        <input type="datetime-local" id="arrival_date" name = "arrival_date" placeholder="arrival_date"  autocomplete="arrival_date"><br>
     
  
 
@@ -150,10 +155,10 @@ include("./admin_sidebar.php");
 
 
     <label for="departure_date" >Departure Date</label><br>
-    <input type="datetime-local" id="departure_date" placeholder="departure_date"  autocomplete="departure_date"><br>
+    <input type="datetime-local" id="departure_date" name = "departure_date" placeholder="departure_date"  autocomplete="departure_date"><br>
 
     <label for="price"> Total Price</label><br>
-    <input type="text" id="price" placeholder="price" required autocomplete="price"><br>
+    <input type="text" id="price" placeholder="price" name = "price" required autocomplete="price"><br>
 
 
 
@@ -161,7 +166,7 @@ include("./admin_sidebar.php");
     </div>
 
 
-    <button id="login_button" type="submit">Add Credentials</button>
+    <button id="login_button" name = "login" type="submit">Add Credentials</button>
     <br>
 
 
@@ -190,3 +195,200 @@ include("./admin_sidebar.php");
 <script src="../js/user_management.js" defer></script>
 </body>
 </html>
+
+
+
+
+
+<!-- __________________________________________DELETING FROM TABLE_____________________________ -->
+
+<?php
+
+include("/xampp2/htdocs/renew/forms/dbconnect.php");
+    
+?>
+
+
+<?php
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    if(isset($_POST["delete"])){
+        $id = $_POST["id"];
+
+        $sql = "DELETE FROM user_management WHERE id = $id";
+
+       if(mysqli_query($conn, $sql)){
+        echo "<script>alert('Record deleted successfully'); </script>";
+       }
+       else {
+        echo "<script>alert('Error deleting record');</script>";
+       }
+
+        
+
+
+
+    }
+    mysqli_close($conn);
+}
+
+
+
+?>
+
+
+
+
+<!-- _____________________________INSERTING INTO TABLE _________________________ -->
+<?php
+
+include("/xampp2/htdocs/renew/forms/dbconnect.php");
+
+?>
+
+<?php
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    
+    $first_name = $_POST["first_name"];
+    $middle_name = $_POST["middle_name"];
+    $last_name = $_POST["last_name"];
+    $address = $_POST["address"];
+    $number = $_POST["number"];
+    $email = $_POST["email"];
+    $rented_hostel = $_POST["rented_hostel"];
+    $number_of_rooms = $_POST["number_of_rooms"];
+    $booking_date = $_POST["booking_date"];
+    $arrival_date = $_POST["arrival_date"];
+    $departure_date = $_POST["departure_date"];
+    $price = $_POST["price"];
+
+   
+    if(isset($_POST["login"])){
+
+        $sql = "INSERT INTO user_management (first_name, middle_name, last_name, address, number, email, rented_hostel, no_of_rooms, booking_date, arrival_date, departure_date, price)
+                VALUES('$first_name', '$middle_name', '$last_name', '$address', '$number', '$email', '$rented_hostel', '$number_of_rooms', '$booking_date', '$arrival_date', '$departure_date', '$price')";
+
+         mysqli_query($conn, $sql);
+
+
+
+
+
+
+
+    }
+
+    mysqli_close($conn);
+}
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+<!-- __________________________________SHOWING IN THE TABLE (SELECT METHOD_________________) -->
+
+<?php
+
+include("/xampp2/htdocs/renew/forms/dbconnect.php");
+
+?>
+
+
+
+
+<div class = "table">
+
+<?php
+
+
+
+  
+
+        $sql = "SELECT * FROM user_management";
+
+        $result = mysqli_query($conn, $sql);
+
+    if(mysqli_num_rows($result)>0){
+
+      echo   "<table class = 'showtable' border='1'>
+                <tr>
+                    <th> id </th>
+                    <th> first_name </th>
+                    <th> middle_name </th>
+                    <th> last_name </th>
+                    <th> address </th>
+                    <th> number </th>
+                    <th> email </th>
+                    <th> rented_hostel </th>
+                    <th> no_of_rooms </th>
+                    <th> booking_date </th>
+                    <th> arrival_date </th>
+                    <th> departure_date </th>
+                    <th> price </th>
+                    <th colspan = '2'> Perform </th>
+
+                </tr> ";
+       while( $row = mysqli_fetch_assoc($result)){
+
+        echo  
+
+                " <tr>
+                    <td> {$row['id']}</td>
+                    <td> {$row['first_name']} </td>
+                    <td> {$row['middle_name']} </td>
+                    <td> {$row['last_name']} </td>
+                    <td> {$row['address']} </td>
+                    <td> {$row['number']} </td>
+                    <td> {$row['email']} </td>
+                    <td> {$row['rented_hostel']} </td>
+                    <td> {$row['no_of_rooms']} </td>
+                    <td> {$row['booking_date']}</td>
+                    <td> {$row['arrival_date']} </td>
+                    <td> {$row['departure_date']} </td>
+                    <td> {$row['price']} </td>
+                    <td colspan = '2'> 
+                    <form action = '' method = 'POST'>
+
+                     <input type='hidden' name='id' value='{$row['id']}'>
+                    <button type='submit' name='update' class='UPDATE'>UPDATE</button>
+                    <button type='submit'  name='delete' class='DELETE'>DELETE</button>
+
+                    </form>
+                    </td>
+
+                </tr>";
+
+             
+       }
+       echo "</table>";
+       
+    }
+    else{
+        echo "<script>alert( 'NO records found');</script>";
+    }
+
+            
+       
+    
+
+
+       
+
+       mysqli_close($conn);
+
+    
+?>
+</div>
+
+
+

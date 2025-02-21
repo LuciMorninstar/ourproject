@@ -69,10 +69,10 @@ body::-webkit-scrollbar-track {
 
 
 
-.social_media{
+#social_media{
 
     position:absolute;
-    top:3000px;;
+    top:2250px;;
     left:250px;
     width:1150px;
     height:500px;
@@ -164,7 +164,7 @@ body::-webkit-scrollbar-track {
  }
 
 
- .social_media .icons a::before{
+ #social_media .icons a::before{
     content:attr(data-icon_name);
     color:white;
     position:absolute;
@@ -182,12 +182,12 @@ body::-webkit-scrollbar-track {
 
  }
 
- .social_media .icons a:hover{
+ #social_media .icons a:hover{
     background-color:var(--animate_color);
     fill:white;
  }
 
- .social_media  .icons a::after{
+ #social_media  .icons a::after{
     content:"";
     position:absolute;
     height:0;
@@ -202,14 +202,14 @@ body::-webkit-scrollbar-track {
    
  }
 
- .social_media .icons a:hover::before{
+ #social_media .icons a:hover::before{
     transform:translateY(-65px) rotate(0deg);
     opacity:1;
 
 
  }
 
- .social_media  .icons a:hover::after{
+ #social_media  .icons a:hover::after{
     transform:translateY(-44px) rotate(0deg);
     opacity:1;
 

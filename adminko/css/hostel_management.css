@@ -95,8 +95,8 @@ main{
     border-radius:10px;
     text-align: center;
     
-    width:64.5em;;
-    height:60px;
+    width:64.5em;
+    height:65px;
     /* margin-top:10px; */
     padding-top:15px;
     /* margin-bottom:20px; */
@@ -351,3 +351,75 @@ main{
 
 
 /* ______________________________________ADD HOSTEl INFORMATION END_________________________________________________ */
+
+.table{
+    position:absolute;
+    left:100px;
+    top:300px;
+    /* background:var(--button-color); */
+
+
+}
+
+.showtable{
+    td{
+        /* color:black; */
+        width:auto;
+        text-align: center;
+        padding-left:2px;
+        padding-right:2px;
+        padding-top:7px;
+        padding-bottom:7px;
+
+    }
+    th{
+        /* text-transform: uppercase; */
+        width:auto;
+        text-align: center;
+        padding-left:2px;
+        padding-right:2px;
+        padding-top:7px;
+        padding-bottom:7px;
+        background:var(--button-color);
+
+    }
+    
+    
+
+
+}
+.showtable{
+    th:nth-child(14), td:nth-child(14){
+        width:200px;
+    }
+
+    button{
+        height:30px;
+        width:80px;
+        /* background:green; */
+        border-radius:5px;
+        border:transparent;
+        cursor: pointer;
+
+       
+    }
+
+}
+
+.showtable{
+    .UPDATE{
+        background:green;
+        margin-right:10px;
+        /* cursor:pointer; */
+    }
+    
+}
+
+.showtable{
+    .DELETE{
+        background:red;
+        /* cursor:pointer; */
+    }
+}
+
+

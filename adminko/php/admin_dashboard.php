@@ -1,4 +1,9 @@
 <?php
+session_start();
+?>
+
+
+<?php
 include("./admin_container.php");
 
 ?>

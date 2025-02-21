@@ -11,7 +11,7 @@
     
 
 <footer>
-    <div class="social_media">
+    <div id="social_media">
     
         <div class="ourservices">
             <h4>Our Services</h4>

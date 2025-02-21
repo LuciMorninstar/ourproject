@@ -23,7 +23,7 @@
 
 
     <div class="login"> 
-        <a href="#"> <p id="login_name">login</p></a>
+        <a href="../forms/userlogin.php"> <p id="login_name">login</p></a>
     </div>
     </div>
     </div>
@@ -50,23 +50,6 @@
     </ul>
     
   
-<?php
-
-include("../forms/userlogin.php");
-
-?>
-
-<?php
-
-include("../forms/adminlogin.php");
-
-?>
-
-<?php
-
-include("../forms/register.php");
-
-?>
 
 
 

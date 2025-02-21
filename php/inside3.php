@@ -21,7 +21,7 @@ include("./sidebar.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/inside2.css">
+    <link rel="stylesheet" href="../css/inside3.css">
 
 </head>
 <body>
@@ -34,12 +34,12 @@ include("./sidebar.php");
   
 <p class="loved">Loved by Students</p> 
 
-<h1 class="hostel_name2"></h1>
+<h1 class="hostel_name3"></h1>
 
 <div class="flex_row">
 
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"/></svg>
-<p class = "hostel_address2"> </p>
+<p class = "hostel_address3"> </p>
 <div class="box" id="map_view_scroller">
    <p id="map_show"> View map </p>
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190ZM480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"/></svg>
@@ -209,7 +209,7 @@ include("./sidebar.php");
 
 <div class="map" id="map">
    
-<h2>Location of <p id="hotel_name">Greatwall Boy's Hostel</p></h2>
+<h2>Location of <p id="hostel_name3">Greatwall Boy's Hostel</p></h2>
 <div class="map_view">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9951.246353187285!2d85.34281202559106!3d27.68773907591625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198d28f60283%3A0x54c799bd7f1efdb3!2sGreatwall%20Boys%20Hostel!5e0!3m2!1sen!2snp!4v1730123072444!5m2!1sen!2snp" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
@@ -232,7 +232,7 @@ include("./sidebar.php");
 
 
 
-    <script src="../js/inside2.js" defer></script>
+    <script src="../js/inside3.js" defer></script>
     
 </body>
 </html>

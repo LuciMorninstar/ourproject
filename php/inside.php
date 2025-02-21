@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <?php 
 include("./container.php");
  ?>
@@ -28,6 +32,7 @@ include("./sidebar.php");
 <p class="loved">Loved by Students</p> 
 
 <h1 class="hostel_name">Greatwall Boy's Hostel</h1>
+
 
 <div class="flex_row">
 
@@ -231,7 +236,3 @@ include("./sidebar.php");
 </body>
 </html>
 
-
-<?php 
-include("./footer_social.php");
-?>

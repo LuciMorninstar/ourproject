@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --background-color:#11121a;
+    --text-color:white;
+    --content-color:gray;
+    --button-color:rgb(62,68,254);  
+    --black-color:black;
+    --line-color:gray;
+    --hover-color:#222533;
+    --background-over:#1c1f2b; 
+    --input-background-color:#141414;
+    --input-border-color:#2b2b2b;
+ 
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--text-color);
+     
+    
+
+}
+
+
+body{
+    background:var(--background-color);
+    line-height:1.5rem;
+    color:var(--text-color);
+    min-height:100vh;
+    min-height:100dvh;
+    display:flex;
+    grid-template-columns: auto 1fr;
+ 
+
+}
+
+body{
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    
+}
+
+body::-webkit-scrollbar{
+    width:6px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--button-color);
+    border-radius:10px;
+}
+
+
+body::-webkit-scrollbar-track {
+    background:black; /* Optional: Set the track background */
+}
+
+
+
+/* _____________________________LOGIN AS ADMIN_______________________________ */
+
+
+
+/*------------------------LOGIN FORM----------------**/
+.adminlogin{
+    backdrop-filter: blur(10px); 
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    background:var(--black-color);
+    /* opacity: 90%; */
+    width:460px;
+    height:400px;
+    padding:60px;
+    border-radius:10px;
+
+    z-index:1000;
+
+    /* display:block; */
+
+    
+}
+
+@keyframes slideup{
+    0%{
+        transform:translateY(100%);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+    }
+}
+
+
+
+
+
+ .adminlogin h3{
+    text-align:center;
+    font-size:20px;
+    /* background:red; */
+}
+
+.adminlogin label:nth-child(1),:nth-child(2){
+    font-size:11px;
+    letter-spacing:1px;    
+    line-height:24px;
+    
+    
+}
+.adminlogin label{
+    text-transform:uppercase;
+}
+
+.adminlogin #email{
+    margin-bottom:4px;
+}
+
+.adminlogin #email,#password{
+    height:40px;
+    width:100%;
+    /* background:brown; */
+    margin-top:3px;
+    padding-left:10px;
+    caret-color: var(--button-color);
+    color:var(--text-color);
+    border:3px solid transparent;
+    border-left:3px solid var(--button-color);
+    background:transparent;
+    transition:box-shadow 0.4s linear;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.adminlogin #email:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+    
+}
+
+.adminlogin #password:focus{
+    box-shadow:3px 3px 7px var(--button-color);
+    outline:none;
+    border:none;
+}
+
+
+
+.forgot-password{
+    margin-top:20px;
+    text-align:end;
+    font-size:16px;
+    line-height:24px;
+    width:100%;
+    /* background:red; */
+   
+
+}
+.forgot-password a{
+ text-decoration:none;
+ color:var(--button-color);
+ transition:color 0.3s ease-in-out;
+}
+
+.adminlogin button{
+    margin-top:26px;
+    height:40px;
+    width:100%;
+    color:var(--black-color);
+    font-size:20px;
+    background:var(--button-color);
+    border-radius:7px;
+    border:3px solid transparent;
+    color:var(--text-color);    
+    transition:transform 0.3s ease-in-out;
+      cursor: pointer;
+ 
+}
+
+
+.adminlogin button:hover{
+    transform:scale(1.07);
+}
+
+
+
+.close_admin_btn svg{
+    position:absolute;
+    top:-20px;
+    right:160px;
+    transform:translateX(175px);
+    fill:var(--content-color);
+    transition:transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    
+} 
+
+    /* --------------javascript--------------- */
+    
+
+
+
+.close_admin_btn svg:hover{
+    fill:red;
+    filter:drop-shadow(0px 0px 5px rgba(255,0,0,1.9));
+    
+}

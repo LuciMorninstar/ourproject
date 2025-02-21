@@ -74,6 +74,40 @@ boxes2.forEach((box)=>{
 })
 
 
+const boxes3 =  document.querySelectorAll(".box3");
+// console.log(boxes3);
+
+boxes3.forEach((box)=>{
+
+    box.addEventListener("click", ()=>{
+
+        const details = {
+
+            // hostel_image: box.querySelector(".hostel_image3").src,
+            hostel_name : box.querySelector(".hostel_name3").textContent,
+            hostel_address : box.querySelector(".hostel_address3").textContent,
+            hostel_price: box.querySelector(".rent3").textContent
+           
+
+
+        }
+        // console.log(details.hostel_name);
+        
+
+        localStorage.setItem("clicked_add", JSON.stringify(details));
+
+
+
+
+
+    })
+
+    
+
+
+})
+
+
 
 
 
@@ -93,12 +127,13 @@ fetch("../json/Top_offers.json")
 })
 .then(data=>{
     data.forEach((hostel,index)=>{
-        // console.log(hostel.hostel_name);
+        // console.log(hostel.price);
         document.querySelectorAll(".hostel_name")[index].textContent = hostel.hostel_name;
         document.querySelectorAll(".hostel_address")[index].textContent = hostel.hostel_address;
         document.querySelectorAll(".hostel_image")[index].src = hostel.hostel_image;
         document.querySelectorAll(".intro")[index].textContent = hostel.intro;
         document.querySelectorAll(".status")[index].textContent = hostel.status;
+        document.querySelectorAll(".rent")[index].textContent = `NRs. ${hostel.price}`;
 
 
     })
@@ -119,12 +154,13 @@ fetch("../json/featuring_ones.json")
 })
 .then(data=>{
     data.forEach((hostel,index)=>{
-        // console.log(hostel.hostel_name);
+        // console.log(hostel.price);
         document.querySelectorAll(".hostel_name1")[index].textContent = hostel.hostel_name;
         document.querySelectorAll(".hostel_address1")[index].textContent = hostel.hostel_address;
         document.querySelectorAll(".hostel_image1")[index].src = hostel.hostel_image;
         document.querySelectorAll(".intro1")[index].textContent = hostel.intro;
         document.querySelectorAll(".status1")[index].textContent = hostel.status;
+        document.querySelectorAll(".rent1")[index].textContent = `NRs. ${hostel.price}`;
 
 
     })
@@ -134,4 +170,5 @@ fetch("../json/featuring_ones.json")
 
 
 
+//___________________________REFER TO PAYMENT GATEAWAY_____________________________
 
