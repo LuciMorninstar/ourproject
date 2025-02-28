@@ -22,10 +22,10 @@ add_user.addEventListener("click",()=>{
     add_user_details.classList.toggle("dekhau");
     this_svg.classList.toggle("rotation");
 
-    bluring_items.forEach((items)=>{
+    // bluring_items.forEach((items)=>{
 
-        items.classList.add("blur");
-    })
+    //     items.classList.add("blur");
+    // })
     
 
 })
@@ -38,10 +38,10 @@ close_register_btn.addEventListener("click",()=>{
     this_svg.classList.toggle("rotation");
 
     
-    bluring_items.forEach((items)=>{
+    // bluring_items.forEach((items)=>{
 
-        items.classList.remove("blur");
-    })
+    //     items.classList.remove("blur");
+    // })
 
     
 

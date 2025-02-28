@@ -202,39 +202,6 @@ include("./admin_sidebar.php");
 
 <!-- __________________________________________DELETING FROM TABLE_____________________________ -->
 
-<?php
-
-include("/xampp2/htdocs/renew/forms/dbconnect.php");
-    
-?>
-
-
-<?php
-
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    if(isset($_POST["delete"])){
-        $id = $_POST["id"];
-
-        $sql = "DELETE FROM user_management WHERE id = $id";
-
-       if(mysqli_query($conn, $sql)){
-        echo "<script>alert('Record deleted successfully'); </script>";
-       }
-       else {
-        echo "<script>alert('Error deleting record');</script>";
-       }
-
-        
-
-
-
-    }
-    mysqli_close($conn);
-}
-
-
-
-?>
 
 
 
@@ -242,7 +209,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!-- _____________________________INSERTING INTO TABLE _________________________ -->
 <?php
 
-include("/xampp2/htdocs/renew/forms/dbconnect.php");
+include("/xampp2/htdocs/hbs/forms/dbconnect.php");
 
 ?>
 
@@ -296,99 +263,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 
 <!-- __________________________________SHOWING IN THE TABLE (SELECT METHOD_________________) -->
-
+<!-- display.php -->
 <?php
 
-include("/xampp2/htdocs/renew/forms/dbconnect.php");
+include("user_display.php");
 
 ?>
-
-
-
-
-<div class = "table">
-
-<?php
-
-
-
-  
-
-        $sql = "SELECT * FROM user_management";
-
-        $result = mysqli_query($conn, $sql);
-
-    if(mysqli_num_rows($result)>0){
-
-      echo   "<table class = 'showtable' border='1'>
-                <tr>
-                    <th> id </th>
-                    <th> first_name </th>
-                    <th> middle_name </th>
-                    <th> last_name </th>
-                    <th> address </th>
-                    <th> number </th>
-                    <th> email </th>
-                    <th> rented_hostel </th>
-                    <th> no_of_rooms </th>
-                    <th> booking_date </th>
-                    <th> arrival_date </th>
-                    <th> departure_date </th>
-                    <th> price </th>
-                    <th colspan = '2'> Perform </th>
-
-                </tr> ";
-       while( $row = mysqli_fetch_assoc($result)){
-
-        echo  
-
-                " <tr>
-                    <td> {$row['id']}</td>
-                    <td> {$row['first_name']} </td>
-                    <td> {$row['middle_name']} </td>
-                    <td> {$row['last_name']} </td>
-                    <td> {$row['address']} </td>
-                    <td> {$row['number']} </td>
-                    <td> {$row['email']} </td>
-                    <td> {$row['rented_hostel']} </td>
-                    <td> {$row['no_of_rooms']} </td>
-                    <td> {$row['booking_date']}</td>
-                    <td> {$row['arrival_date']} </td>
-                    <td> {$row['departure_date']} </td>
-                    <td> {$row['price']} </td>
-                    <td colspan = '2'> 
-                    <form action = '' method = 'POST'>
-
-                     <input type='hidden' name='id' value='{$row['id']}'>
-                    <button type='submit' name='update' class='UPDATE'>UPDATE</button>
-                    <button type='submit'  name='delete' class='DELETE'>DELETE</button>
-
-                    </form>
-                    </td>
-
-                </tr>";
-
-             
-       }
-       echo "</table>";
-       
-    }
-    else{
-        echo "<script>alert( 'NO records found');</script>";
-    }
-
-            
-       
-    
-
-
-       
-
-       mysqli_close($conn);
-
-    
-?>
-</div>
-
-
-

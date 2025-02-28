@@ -67,176 +67,16 @@ body::-webkit-scrollbar-track {
 
 
 
-/* _________________________________ADDED USER MANAGEMENT____________________________________________ */
-
-
-
-
-main{
-    position:relative;
-    top:115px;
-    left:100px;
-    width:90%;
-    z-index:1;
-    /* border:4px solid aqua; */
-    /* background:red; */
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-    
-   
-    
-}   
-
-.Topic{
-    font-size:16px;
-    text-transform: uppercase;
-    background:var(--button-color);
-    border-radius:10px;
-    text-align: center;
-    
-    
-    width:64.5em;
-    height:60px;
-    /* margin-top:10px; */
-    padding-top:21px;
-    /* margin-bottom:20px; */
-    /* transform:translateY(-33px); */
-    /* box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491); */
-    border-radius:2px;
-    font-size:24px;
-
-    svg{
-        transform:translateY(-3px);
-
-
-    }
-}
-
-
-
-.information{
-    position:relative;
-    left:0%;
-    /* transform:translateX(100px); */
-
-
-    height:250px;
-    width:400px;
-    border-left:5px solid var(--button-color);
-    /* background:var(--background-over); */
-    box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491);
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center;
-    font-size:14px;
-    border-radius:5px;
-    padding:20px;
-
-    li{
-        
-        list-style-type: none;
-        /* margin-top:10px; */
-        border-bottom:1px solid rgba(255, 255, 255, 0.445);
-        padding:20px 5px 0px 5px;
-
-        &:nth-child(2){
-            font-size:14px;
-        }
-
-        &:nth-child(3){
-            margin-bottom:30px;
-        }
-
-    }
-
-    p{
-        /* transform:translate(330px,-20px); */
-        margin-left:330px;
-        transform:translateY(-20px);
-        
-    }
-
-}
-
-
-/* ________________________________________ADD USER DETAILS_____________________________________ */
-
-
-.add_user{
-    font-size:18px;
-    border-radius:5px;
-    /* font-weight: bold; */
-    width:220px;
-    height:50px;
-    background:black;
-    border:none;
-    padding:3px 10px 8px 10px;
-    transition:200ms ease-in-out;
-    cursor:pointer;
-
-
-    &:hover{
-        padding-top:14px;
-        background:var(--button-color);
-        
-
-    }
-
-
-    svg{
-        transform:translateY(-2px);
-        padding-right:4px;
-        transition:300ms ease-in-out;
-    }
-
-
-
-
-
-}
-
-/* javascript */
-
-.this_svg.rotation{
-    transform:rotate(180deg);
-}
-
-
-
-
-    
- /* javascript */
-
- .add_user_details.dekhau{
-    
-    opacity:1;
-    visibility:visible;
-    z-index:5;
-   
-    
- }
-
-
-     
- /* javascript */
-
-.blur{
-    filter:blur(10px);
-    /* pointer-events: none; */
- }
-
 
 
 .add_user_details{
 
-    /* background:green; */
+    background:green;
     position:absolute;
-    top: 50%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -60%); /* This centers the element */
-    z-index: 5;
+    /* z-index: 5; */
     /* top:50%;
     left:50%;
     translate:-50% -50%; */
@@ -251,12 +91,19 @@ main{
     padding:50px;
     border-radius:10px;
     box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491);
+    display:block;
+        
+    opacity:1;
+    visibility:visible;
+    z-index:5;
+   
+    
  
     /* z-index:1000; */
-    transition:600ms ease-in-out;       
-    opacity:0;
-    visibility: hidden;
-    filter:none;
+    /* transition:600ms ease-in-out;        */
+    /* opacity:0; */
+    /* visibility: hidden; */
+    /* filter:none; */
     
 
 
@@ -384,46 +231,4 @@ main{
 
 
 
- 
-
-
-/* ______________________________________ADD USER DETAILS END_________________________________________________ */
-
-.table{
-    position:absolute;
-    left:100px;
-    top:570px;
-    /* background:var(--button-color); */
-    overflow-x:scroll;
-    width:1600px;
-  
-
-th{
-    background:var(--button-color);
-    color:white;
-    text-align:center;
-    border-right:1px solid white;
-    border-left:1px solid white;
-}
-td{
-
-    background:var(--background-color);
-    color:white;
-    text-align:center;
-    border-right:1px solid white;
-    border-left:1px solid white;
-    /* margin-top:30px; */
-
-}
-}
-
-button{
-    width:80px;
-    cursor: pointer;
-    a{
-        font-size:15px;
-        text-decoration:none;
-        
-    }
-}
  

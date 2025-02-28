@@ -97,6 +97,30 @@ body{
         font-size:14px;
     }
 
+    .refer-to-rent{
+        /* border:1px solid green; */
+        font-size:1.4em;
+        font-family: cusrive;
+        height:40px;
+        width:100px;
+        padding:10px 20px;
+        /* border-radius:15px; */
+        /* background:var(--button-color); */
+        background:linear-gradient(to left, rgb(0, 68, 255), var(--button-color));
+        /* border:3px solid var(--button-color); */
+        outline:none;
+        
+        border:none;
+        position:absolute;
+        left:500px;
+        top:25px;
+        cursor:pointer;
+
+      
+    }
+
+
+
     .box{
         width:84px;
         height:70px;

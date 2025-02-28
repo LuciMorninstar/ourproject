@@ -162,7 +162,7 @@ include("./admin_sidebar.php");
 
 <?php
 
-include("/xampp2/htdocs/renew/forms/dbconnect.php");
+include("/xampp2/htdocs/hbs/forms/dbconnect.php");
 
 ?>
 
@@ -203,7 +203,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <?php
 
-include("/xampp2/htdocs/renew/forms/dbconnect.php");
+include("/xampp2/htdocs/hbs/forms/dbconnect.php");
 
 ?>
 
@@ -249,104 +249,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 ?>
 
 
-<?php
 
-include("/xampp2/htdocs/renew/forms/dbconnect.php");
-
-?>
-
-
-<div class = "table">
+<!-- _________________INCLUDING THE DISPLAY OF TABLE_______________ -->
 
 <?php
 
-
-
-  
-
-        $sql = "SELECT * FROM hostel_management";
-
-        $result = mysqli_query($conn, $sql);
-
-    if(mysqli_num_rows($result)>0){
-
-      echo   "<table class = 'showtable' border='1'>
-                <tr>
-                    <th> id </th>
-                    <th> hostel_name </th>
-                    <th> location</th>
-                    <th> Number </th>
-                    <th> email </th>
-                    <th> category </th>
-                    <th> rooms </th>
-                    <th> bathrooms </th>
-                    <th> beds </th>
-                    <th> hostel_image </th>
-                    <th> gallery_image </th>
-                    <th> map_url </th>
-                    <th> price </th>
-                    <th colspan = '2'> Perform </th>
-
-                </tr> ";
-       while( $row = mysqli_fetch_assoc($result)){
-
-        echo  
-
-                " <tr>
-                    <td> {$row['id']}</td>
-                    <td> {$row['hostel_name']} </td>
-                    <td> {$row['location']} </td>
-                    <td> {$row['number']} </td>
-                    <td> {$row['email']} </td>
-                    <td> {$row['category']} </td>
-                    <td> {$row['rooms']} </td>
-                    <td> {$row['bathrooms']} </td>
-                    <td> {$row['beds']} </td>
-                    <td> {$row['image']}</td>
-                    <td> {$row['gallery']} </td>
-                    <td> {$row['map_url']} </td>
-                    <td> {$row['price']} </td>
-                    <td colspan = '2'> 
-                    
-                      <form action = '' method = 'POST'>
-
-                     <input type='hidden' name='id' value='{$row['id']}'>
-                    <button type='submit' name='update' class='UPDATE'>UPDATE</button>
-                    <button type='submit'  name='delete' class='DELETE'>DELETE</button>
-
-                    </form>
-                    
-                    </td>
-                    
-
-                </tr>";
-
-             
-       }
-       echo "</table>";
-       
-    }
-    else{
-        echo "<script>alert( 'NO records found');</script>";
-    }
-
-            
-       
-    
-
-
-       
-
-       mysqli_close($conn);
-
-    
-?>
-</div>
-
-
-<?php
-
-
+include("hostel_display.php");
 
 ?>
-

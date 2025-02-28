@@ -15,10 +15,10 @@ add_hostel.addEventListener("click",()=>{
     add_hostel_details.classList.toggle("dekhau");
     this_svg.classList.toggle("rotation");
 
-    bluring_items.forEach((items)=>{
+    // bluring_items.forEach((items)=>{
 
-        items.classList.add("blur");
-    })
+    //     items.classList.add("blur");
+    // })
     
 
 })
@@ -32,10 +32,10 @@ close_register_btn.addEventListener("click",()=>{
 
 
     
-    bluring_items.forEach((items)=>{
+    // bluring_items.forEach((items)=>{
 
-        items.classList.remove("blur");
-    })
+    //     items.classList.remove("blur");
+    // })
 
     
 

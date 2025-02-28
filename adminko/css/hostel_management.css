@@ -98,7 +98,7 @@ main{
     width:64.5em;
     height:65px;
     /* margin-top:10px; */
-    padding-top:15px;
+    padding-top:21px;
     /* margin-bottom:20px; */
     /* transform:translateY(-33px); */
     /* box-shadow:6px 4px 6px rgba(0, 0, 0, 0.491); */
@@ -106,7 +106,7 @@ main{
     font-size:24px;
 
     svg{
-        transform:translateY(3px);
+        transform:translateY(-3px);
 
 
     }
@@ -139,7 +139,7 @@ main{
 
 
     svg{
-        transform:translateY(5px);
+        transform:translateY(-2px);
         padding-right:4px;
         transition:300ms ease-in-out;
     }
@@ -352,74 +352,42 @@ main{
 
 /* ______________________________________ADD HOSTEl INFORMATION END_________________________________________________ */
 
+
 .table{
     position:absolute;
     left:100px;
     top:300px;
     /* background:var(--button-color); */
+    overflow-x:scroll;
+    width:1600px;
+  
 
+th{
+    background:var(--button-color);
+    color:white;
+    text-align:center;
+    border-right:1px solid white;
+    border-left:1px solid white;
+}
+td{
+
+    background:var(--background-color);
+    color:white;
+    text-align:center;
+    border-right:1px solid white;
+    border-left:1px solid white;
+    /* margin-top:30px; */
 
 }
-
-.showtable{
-    td{
-        /* color:black; */
-        width:auto;
-        text-align: center;
-        padding-left:2px;
-        padding-right:2px;
-        padding-top:7px;
-        padding-bottom:7px;
-
-    }
-    th{
-        /* text-transform: uppercase; */
-        width:auto;
-        text-align: center;
-        padding-left:2px;
-        padding-right:2px;
-        padding-top:7px;
-        padding-bottom:7px;
-        background:var(--button-color);
-
-    }
-    
-    
-
-
-}
-.showtable{
-    th:nth-child(14), td:nth-child(14){
-        width:200px;
-    }
-
-    button{
-        height:30px;
-        width:80px;
-        /* background:green; */
-        border-radius:5px;
-        border:transparent;
-        cursor: pointer;
-
-       
-    }
-
 }
 
-.showtable{
-    .UPDATE{
-        background:green;
-        margin-right:10px;
-        /* cursor:pointer; */
-    }
-    
-}
-
-.showtable{
-    .DELETE{
-        background:red;
-        /* cursor:pointer; */
+button{
+    width:80px;
+    cursor: pointer;
+    a{
+        font-size:15px;
+        text-decoration:none;
+        
     }
 }
-
-
+ 
