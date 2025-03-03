@@ -18,6 +18,8 @@ const Clickedbox2 = JSON.parse(localStorage.getItem("Clickedbox2"));
 
 if(Clickedbox2){
     document.querySelector(".hostel_name2").textContent = Clickedbox2.hostel_name2;
+    document.querySelector("#hostel_name2").textContent = Clickedbox2.hostel_name2;
+
     document.querySelector(".hostel_address2").textContent = Clickedbox2.hostel_address2;
     document.querySelector("#describe2").textContent = Clickedbox2.intro2;
 

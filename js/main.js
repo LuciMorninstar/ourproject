@@ -86,7 +86,8 @@ boxes3.forEach((box)=>{
             // hostel_image: box.querySelector(".hostel_image3").src,
             hostel_name : box.querySelector(".hostel_name3").textContent,
             hostel_address : box.querySelector(".hostel_address3").textContent,
-            hostel_price: box.querySelector(".rent3").textContent
+            hostel_price: box.querySelector(".rent3").textContent,
+            hostel_intro: box.querySelector(".intro3").textContent
            
 
 

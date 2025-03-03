@@ -90,7 +90,7 @@
     </div>
 
     <div class="column">
-        <label class = "labelforbookingdate" for="departure_date" >Booking Date</label>
+        <label class = "labelforbookingdate" for="departure_date" >Departure Date</label>
         <input type="datetime-local" id="departure_date" placeholder="departure_date" name = "departure_date" required autocomplete="booking_date">
     </div>
 
@@ -98,7 +98,7 @@
   </div>
 
   <label for = "price">Price</label>
-  <input type = "text" name = "price" id = "price" placeholder = "NRs." required autocomplete="price">
+  <input type = "text" name = "price" id = "price"  placeholder = "NRs." required autocomplete="price">
 
 
 
@@ -123,7 +123,14 @@
 
 
 
-
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const now = new Date();
+    now.setMinutes(now.getMinutes() - now.getTimezoneOffset()); // Adjust for local time
+    const formattedDateTime = now.toISOString().slice(0, 16);
+    document.getElementById("booking_date").value = formattedDateTime;
+  });
+</script>
 
   <!-- <script src="../js/container.js" defer></script> -->
 </body>

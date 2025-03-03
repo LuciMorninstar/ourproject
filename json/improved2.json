@@ -297,7 +297,86 @@
         "status":"Available"
         
 
+    },
+
+    {
+
+        "hostel_name": "Ganesh Hostel",
+        "hostel_address": "Subidhanagar, Tinkune, Kathmandu",
+        "hostel_image" :"../images/Om-Boys-Hostel-New-Baneshwor-Thapagaun-2-bed.png",
+        "intro":"Ganesh Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Ganesh Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
+        "status":"Available",
+        "price": 13999
+        
+
+    },
+
+
+    {
+        
+        "hostel_name": "Peaceful Retreat Hostel",
+        "hostel_address": "Balkumari, Kathmandu",
+        "hostel_image" :"../images/Om-Boys-Hostel-New-Baneshwor-Thapagaun.png",
+        "intro":"Peaceful Retreat Hostel is located on  Balkumari near NCIT& NIST Lalitpur college Hospital, Kathmandu .Pathibhara Boy's  Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
+        "status":"Available",
+        "price": 12999
+        
+
+    },
+
+    {
+
+        "hostel_name": "Mustang Hills Hostel",
+        "hostel_address": "Lokanthali, Kathmandu",
+        "hostel_image" :"../images/kiva_girls2.jpg",
+        "intro":"Mustang Hills Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Mustang Hills Hostelfocuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
+        "status":"Available",
+        "price": 13999
+        
+
+    },
+
+ 
+
+    {
+        
+        "hostel_name": "Happy Trails Lodge",
+        "hostel_address": "Sorhakhutte, Kathmandu",
+        "hostel_image" :"../images/Adriz-boys-hostel-New-Baneswor-room-1024x768.jpg",
+        "intro":"Happy Trails Lodge is located on  Balkumari near NCIT& NIST Lalitpur college Hospital, Kathmandu .Happy Trails Lodgefocuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
+        "status":"Available",
+        "price": 13999
+        
+
+    },
+
+ 
+
+    {
+
+        "hostel_name": "Chill Zone Hostel",
+        "hostel_address": "Balaju, Kathmandu",
+        "hostel_image" :"../images/Himalayan_heaven_girls2.jpg",
+        "intro":"Chill Zone Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Chill Zone Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
+        "status":"Available",
+        "price": 10999
+        
+
+    },
+    
+    {
+
+        "hostel_name": "Laxmi Bas Hostel",
+        "hostel_address": "Sanothimi , Bhaktapur",
+        "hostel_image" :"../images/Tulasha_girls6.jpg",
+        "intro":"Laxmi Bas Hostel is located on  Pancheshwor Marg, Tinkune Kathmandu .Laxmi Bas Hostel focuses on preparing the family type environment with satisfactory facilities like 24 hrs Electricity & WiFi, Attached Showers, locker room, Parking Spaces, hygienic food, laundry services etc." ,
+        "status":"Available",
+        "price": 11999
+        
+
     }
+
+
 
 
 

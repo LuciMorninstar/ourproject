@@ -68,7 +68,21 @@ body::-webkit-scrollbar-track {
 
 /* ____________________________________________________________________MAIN_______________________________________________________________________ */
 
-
+#welcome{
+    font-size:30px;
+    background-image:linear-gradient(to left,lightblue, blue);
+    /* background:var(--button-color); */
+    border-radius:10px;
+    background-clip:text;
+    color:transparent;
+    padding-top:10px;
+    width:350px;
+    height:50px;
+    text-align:center;
+    position:relative;
+    top:120px;
+    margin-left:680px; 
+}
 
  
 /* ______________________________________________________________________HOSTEL BOX______________START_________________________________________ */
@@ -76,7 +90,7 @@ body::-webkit-scrollbar-track {
     position:relative;
     left:150px;
     /* top:180px; */
-    top:180px;
+    top:160px;
  
     width:400px;
     font-size:30px;
@@ -192,7 +206,7 @@ body::-webkit-scrollbar-track {
     /* scroll-snap-align:center; */
    
     position:absolute;
-    top:20px;;
+    top:5px;;
     left:5px;
     height: 540px;
     width:450px;
@@ -650,7 +664,7 @@ width:300px;
         font-weight:bolder;
         /* border:1px solid green; */
         letter-spacing:1px;
-        /* margin-top:25px; */
+        margin-top:25px;
         
        
        

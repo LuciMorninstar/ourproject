@@ -54,7 +54,12 @@ close_register_btn.addEventListener("click",()=>{
     
 })
 
-
+document.addEventListener("DOMContentLoaded", function () {
+    const now = new Date();
+    now.setMinutes(now.getMinutes() - now.getTimezoneOffset()); // Adjust for local time
+    const formattedDateTime = now.toISOString().slice(0, 16);
+    document.getElementById("booking_date").value = formattedDateTime;
+  });
 
 
 

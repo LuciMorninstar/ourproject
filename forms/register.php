@@ -50,10 +50,10 @@
         <label>Select your gender</label><br>
         
         <label for="gender">male</label>
-        <input type="radio" id="male" name="gender">
+        <input type="radio" id="male" value ="male" name="gender">
 
         <label for="gender">female</label>
-        <input type="radio" id="female" name="gender"><br>
+        <input type="radio" id="female" value = "female" name="gender"><br>
 
     </div>
    
@@ -74,7 +74,7 @@
 
 
 
-    <button id="login_button" name = "submit" value = "submit" type="submit">Login</button>
+    <button id="login_button" name = "submit" value = "submit" type="submit">Register</button>
     <br>
 
     <div class="alreadyaccount">
@@ -122,7 +122,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $gender = $_POST["gender"];
     $email = $_POST["email"];
     $number = $_POST["number"];
-    $password = $_POST["password"];
+    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
     // $password_hash = password_hash('$password', PASSWORD_DEFAULT);
 
     $submit = $_POST["submit"];

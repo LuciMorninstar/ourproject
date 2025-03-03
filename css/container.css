@@ -268,7 +268,7 @@ body::-webkit-scrollbar-track {
 /*--------------------Login nav---------------*/
 .search .login{
     position:relative;
-    left:470px;
+    left:450px;
     bottom:37px;
     width:120px;
     height:35px;
@@ -910,3 +910,25 @@ body::-webkit-scrollbar-track {
 .disablescroll{
     overflow:hidden;
 }
+
+
+
+
+.search .login a:hover{
+    
+
+    .afterelement::after{
+        position:absolute;
+        left:20px;
+        top:40px;
+        content:'logout';
+        width:70px;
+        height:15px;
+        text-align:center;
+        text-transform: lowercase;
+        padding:6px;
+        background:var(--button-color);
+    }
+
+}
+

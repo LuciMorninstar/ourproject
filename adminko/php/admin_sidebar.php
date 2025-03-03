@@ -20,8 +20,27 @@
                 </li>
 
                 <li>
-                    <img src="../images/profile.avif" width="150px"  class="admin_photo" >
-                    <p class="admin_name">Bibek Pandit</p>
+                <?php 
+                    if (isset($_SESSION["admin_email"])) { 
+                        if ($_SESSION["admin_email"] == "stars.winner1121@gmail.com") {
+                            echo ' <img src="../images/asdjkfh.jpg" "width="150px"  class="admin_photo" >';
+                        } elseif ($_SESSION["admin_email"] == "riteshcdy12@gmail.com") {
+                            echo '<img src="../images/Screenshot 2025-02-28 163116.png" width="150px"  class="admin_photo" >';
+                        }
+                    }
+                    ?>
+                   
+                    <p class="admin_name">
+                    <?php 
+                    if (isset($_SESSION["admin_email"])) { 
+                        if ($_SESSION["admin_email"] == "stars.winner1121@gmail.com") {
+                            echo 'Bibek Pandit';
+                        } elseif ($_SESSION["admin_email"] == "riteshcdy12@gmail.com") {
+                            echo 'Ritesh Chaudhary';
+                        }
+                    }
+                    ?>
+                    </p>
                     <span>System_Administrator</span>
                 </li>
 

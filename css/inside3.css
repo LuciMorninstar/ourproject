@@ -98,23 +98,35 @@ body{
     }
 
     .refer-to-rent{
-        /* border:1px solid green; */
-        font-size:1.4em;
-        font-family: cusrive;
-        height:40px;
-        width:100px;
-        padding:10px 20px;
-        /* border-radius:15px; */
-        /* background:var(--button-color); */
-        background:linear-gradient(to left, rgb(0, 68, 255), var(--button-color));
-        /* border:3px solid var(--button-color); */
-        outline:none;
-        
-        border:none;
-        position:absolute;
-        left:500px;
-        top:25px;
-        cursor:pointer;
+      /* border:1px solid green; */
+      font-size:1.2em;
+      /* font-family: cusrive; */
+      height:50px;
+      width:100px;
+      padding:5px 10px;
+      /* border-radius:15px; */
+      /* background:var(--button-color); */
+      background:black;
+      /* border:3px solid var(--button-color); */
+      outline:none;
+      text-transform: uppercase;
+      font-family: cursive;
+      
+      border:none;
+      position:absolute;
+      left:500px;
+      top:25px;
+      cursor:pointer;
+      transition:0.2s ease-in-out;
+      border-radius: 5px;
+
+      &:hover{
+          background:var(--button-color);
+          padding-top:15px;
+
+      }
+   
+      
 
       
     }
@@ -143,6 +155,45 @@ body{
             height:29px;
         }
         
+    }
+
+    
+    .callus{
+
+
+        text-decoration:none;
+        position:absolute;
+        left:800px;
+        top:25px;    /* border:1px solid green; */
+        font-size:1.2em;
+        /* font-family: cusrive; */
+        height:50px;
+        width:160px;
+        padding:5px 10px;
+        /* border-radius:15px; */
+        /* background:var(--button-color); */
+        background:black;
+        /* border:3px solid var(--button-color); */
+        outline:none;
+        text-transform: uppercase;
+        font-family: cursive;
+        
+        border:none;
+      
+        cursor:pointer;
+        transition:0.2s ease-in-out;
+        border-radius: 5px;
+  
+        &:hover{
+            background:var(--button-color);
+            padding-top:15px;
+  
+        }   
+
+        svg{
+            fill:rgb(0, 236, 0);
+            transform:translateY(5px);
+        }
     }
 
 }

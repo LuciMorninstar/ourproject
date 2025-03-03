@@ -43,6 +43,15 @@ include("./sidebar.php");
 
 <button type = "submit" class ="refer-to-rent" value = "rent" ><a style = "text-decoration:none;" href="./rent.php">Rent</a></button>
 
+
+<a class="callus" href="tel:9773434343">
+<svg class = "callsvg" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-800v-80h400v80H480Zm0 160v-80h400v80H480Zm0 160v-80h400v80H480ZM758-80q-125 0-247-54.5T289-289Q189-389 134.5-511T80-758q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T347-346q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T630-350l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM201-560l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM201-560Zm358 358Z"/></svg>
+ CALL US
+
+</a>
+
+
+
 <div class="box" id="map_view_scroller">
    <p id="map_show"> View map </p>
     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190ZM480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"/></svg>
@@ -66,8 +75,8 @@ include("./sidebar.php");
 </header>
 </div>
 
-<p id="describe2">
-    Greatwall Boys' Hostel, situated on Pancheshwor Marg, Tinkune, Kathmandu, provides a welcoming, family-like atmosphere for students. It offers essential amenities, including 24-hour electricity, Wi-Fi, attached showers, and locker rooms, ensuring comfort and convenience. The hostel also features secure parking spaces, hygienic meals, and reliable laundry services, catering to students' daily needs. With a focus on creating a supportive environment, Greatwall Boys' Hostel stands out as a home away from home for young residents. </p>
+<p style = "font-size:16px; padding-top:20px; " id="describe2">
+    </p>
 
 
 
@@ -80,9 +89,9 @@ include("./sidebar.php");
 <section id="image_slider">
 
 
-    <img src="DSC8838-scaled-1.jpg" alt="image" width="300px" >
-    <img src="DSC8830-scaled-1.jpg" alt="image" width="300px" >
-    <img src="DSC8829-scaled-1.jpg" alt="image" width="300px" >
+    <img src="../images/kiva_girls.jpg" alt="image" width="300px" >
+    <img src="../images/Adriz-boys-hostel-New-Baneswor-two-1024x768.jpg" alt="image" width="300px" >
+    <img src="../images/Adriz-boys-hostel-New-Baneswor-kitchen-1024x768.jpg" alt="image" width="300px" >
     
 
 </section>
@@ -212,7 +221,7 @@ include("./sidebar.php");
 
 <div class="map" id="map">
    
-<h2>Location of <p id="hotel_name">Greatwall Boy's Hostel</p></h2>
+<h2>Location of <p id="hostel_name2"></p></h2>
 <div class="map_view">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9951.246353187285!2d85.34281202559106!3d27.68773907591625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198d28f60283%3A0x54c799bd7f1efdb3!2sGreatwall%20Boys%20Hostel!5e0!3m2!1sen!2snp!4v1730123072444!5m2!1sen!2snp" width="1100" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

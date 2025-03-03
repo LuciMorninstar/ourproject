@@ -121,6 +121,7 @@ main{
     font-size:18px;
     border-radius:5px;
     /* font-weight: bold; */
+    margin-top:10px;
     width:240px;
     height:50px;
     background:black;
@@ -371,7 +372,7 @@ th{
 }
 td{
 
-    background:var(--background-color);
+   background:var(--background-color);
     color:white;
     text-align:center;
     border-right:1px solid white;

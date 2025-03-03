@@ -71,31 +71,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    $email = $_POST["email"];
    $password = $_POST["password"];
    $login = $_POST["login"];
-
-   $sql = "SELECT email, password
+   
+   $sql = "SELECT email, password,first_name
             FROM register
             WHERE email = '$email'";
 
     $result = mysqli_query($conn, $sql);
 
-    if(mysqli_num_rows($result)>0){
-        $row = mysqli_fetch_assoc($result);
-
-          if($email === $row["email"] && $password === $row["password"]){
-            $_SESSION["username"] = $_POST["email"];
-            $_SESSION["password"] = $_POST["password"];
-
-           echo "Login successful ";
-    
-           header("Location: ../php/main.php");
-           exit;
-
-          }
-          else{
-           echo "<script> window.alert('Invalid Email or password'); window.location.href='../forms/userlogin.php' ;</script> ";
-           exit;
-          }
-
+    if ($row = mysqli_fetch_assoc($result)) {
+        
+      if (password_verify($password, $row["password"])) { // Verify hashed password
+          $_SESSION["username"] = $email;
+          $_SESSION["password"] = $password;
+          $first_name = $row['first_name'];
+          $_SESSION["first_name"] = $first_name;
+          
+          echo "Login successful";
+          header("Location: ../php/main.php");
+          exit;
+      } else {
+          echo "<script>window.alert('Invalid Email or Password'); window.location.href='../forms/userlogin.php';</script>";
+          exit;
+      }
+  } else {
+      echo "<script>window.alert('Invalid Email or Password'); window.location.href='../forms/userlogin.php';</script>";
+      exit;
+  }
 
 
 
@@ -109,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       mysqli_close($conn);
 
     
-    }
+    
           
 
 

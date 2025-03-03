@@ -160,37 +160,6 @@ include("./admin_sidebar.php");
 
 
 
-<?php
-
-include("/xampp2/htdocs/hbs/forms/dbconnect.php");
-
-?>
-
-
-<?php
-
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-    if(isset($_POST["delete"])){
-        $id = $_POST["id"];
-
-        $sql = "DELETE FROM hostel_management WHERE id = $id";
-
-        if(mysqli_query($conn, $sql)){
-            echo "<script> alert('Deleted Successfully); </script>";
-            header("Location: ../adminko/php/hostel_management.php");
-            exit();
-        }
-        else{
-            echo "<script>alert('Error deleting record');</script>";
-        }
-
-
-    }
-}
-
-
-?>
-
 
 
 

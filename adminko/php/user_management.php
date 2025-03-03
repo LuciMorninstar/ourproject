@@ -39,28 +39,7 @@ include("./admin_sidebar.php");
         </div>
 
       
-        <div class="information">
-                
-                <li>Total Log_Inned Users 
-                    <p class="total_no_of_users">0 </p>
-                    
-                </li>
-            
-                <li>Total Paid Users      
-                    <p class="total_no_of_paid_users">0 </p>  
-                    
-                </li>
-            
-
-                <li>Total Unapid Users  
-                    <p class="total_no_of_unpaid_users">0 </p>
-                    
-                </li>
-            
-
-
-        </div>
-
+   
 
 
         
