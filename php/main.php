@@ -5,6 +5,8 @@ session_start();
 ?>
 
 
+
+
 <?php 
 include("./container.php");
  ?>
@@ -16,8 +18,15 @@ include("./sidebar.php");
 
 
 
-
-
+<?php
+if (isset($_SESSION['reject_message'])) {
+    // Show the rejection message in a JavaScript alert
+    echo '<script>alert("' . $_SESSION['reject_message'] . '");</script>';
+    
+    
+    unset($_SESSION['reject_message']);
+}
+?>
 
 
 <!DOCTYPE html>

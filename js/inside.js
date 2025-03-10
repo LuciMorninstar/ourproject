@@ -1,3 +1,16 @@
+
+
+// __________________________REFER TO RENT_________________________
+const refer_to_rent = document.querySelector(".refer-to-rent");
+// console.log(refer_to_rent);
+
+refer_to_rent.addEventListener("click",()=>{
+
+    window.location.href = "../php/rent.php"
+})
+
+
+
 // ____________________map scroll________________________
 const map_view_scroller = document.getElementById("map_view_scroller");
 
@@ -20,7 +33,13 @@ if(Clickedbox){
 
     // localStorage.removeItem("Clickedbox");
 
+    
+    // localStorage.removeItem("Clickedbox");
+
+    localStorage.removeItem("Clickedbox2");
+
+    localStorage.removeItem("clicked_add");
+
+
 }
-
-
 

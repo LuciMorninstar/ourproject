@@ -32,7 +32,7 @@
     
     </div>
 
-    <div class="oneline">
+    <!-- <div class="oneline">
         <div class="column">
             <label for="dob" >Date of Birth</label>
             <input type="date" id="dob" placeholder="dob" name = "dob" required autocomplete="dob" style="width:175px;">
@@ -43,7 +43,7 @@
             <input type="text" id="address" placeholder="city" name = "address" required autocomplete="address">
         </div>
     
-    </div>
+    </div> -->
 
     <div class="choose">
         
@@ -117,8 +117,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    
     $first_name = $_POST["first_name"];
     $last_name = $_POST["last_name"];
-    $dob = $_POST["dob"];
-    $address = $_POST["address"];
+    // $dob = $_POST["dob"];
+    // $address = $_POST["address"];
     $gender = $_POST["gender"];
     $email = $_POST["email"];
     $number = $_POST["number"];
@@ -129,8 +129,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     if(isset($submit)){
 
-        $sql = "INSERT INTO register (first_name, last_name, dob, address, gender, email, number, password)
-                            VALUES('$first_name','$last_name', '$dob', '$address', '$gender', '$email', '$number', '$password')";
+        $sql = "INSERT INTO register (first_name, last_name, gender, email, number, password)
+                            VALUES('$first_name','$last_name','$gender', '$email', '$number', '$password')";
 
         mysqli_query($conn, $sql); 
 

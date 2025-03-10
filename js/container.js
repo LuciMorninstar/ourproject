@@ -50,6 +50,7 @@ search.addEventListener("input",(e)=>{
             listItem.addEventListener("click", ()=>{
                 localStorage.setItem("selectedHostel", JSON.stringify(hostel));
                 window.location.href = "inside.php";
+                
             });
 
             suggestions_list.appendChild(listItem);

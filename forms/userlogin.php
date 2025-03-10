@@ -72,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    $password = $_POST["password"];
    $login = $_POST["login"];
    
-   $sql = "SELECT email, password,first_name
+   $sql = "SELECT email, password,first_name,last_name,gender,number
             FROM register
             WHERE email = '$email'";
 
@@ -85,6 +85,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           $_SESSION["password"] = $password;
           $first_name = $row['first_name'];
           $_SESSION["first_name"] = $first_name;
+          $last_name = $row['last_name'];
+          $_SESSION["last_name"] = $last_name;
+          $number = $row['number'];
+          $_SESSION["number"] = $number;
+          $gender = $row['gender'];
+          $_SESSION["gender"] = $gender;
           
           echo "Login successful";
           header("Location: ../php/main.php");

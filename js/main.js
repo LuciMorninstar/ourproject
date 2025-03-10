@@ -41,11 +41,16 @@ boxes.forEach((box)=>{
 
             hostel_name: box.querySelector(".hostel_name").textContent,
             hostel_address: box.querySelector(".hostel_address").textContent,
-            intro : box.querySelector(".intro").textContent
+            intro : box.querySelector(".intro").textContent,
+            price: box.querySelector(".rent").textContent
 
 
         }
         localStorage.setItem("Clickedbox", JSON.stringify(boxdata));
+
+        localStorage.removeItem("Clickedbox2");
+
+        localStorage.removeItem("clicked_add");
     })
 
 
@@ -65,10 +70,15 @@ boxes2.forEach((box)=>{
         const boxdata2 = {
             hostel_name2 :box.querySelector(".hostel_name1").textContent,
             hostel_address2 :box.querySelector(".hostel_address1").textContent,
-            intro2: box.querySelector(".intro1").textContent
+            intro2: box.querySelector(".intro1").textContent,
+            price2: box.querySelector(".rent1").textContent
         };
 
         localStorage.setItem("Clickedbox2", JSON.stringify(boxdata2));
+
+        localStorage.removeItem("Clickedbox");
+
+        localStorage.removeItem("clicked_add");
 
     })
 })
@@ -87,7 +97,9 @@ boxes3.forEach((box)=>{
             hostel_name : box.querySelector(".hostel_name3").textContent,
             hostel_address : box.querySelector(".hostel_address3").textContent,
             hostel_price: box.querySelector(".rent3").textContent,
-            hostel_intro: box.querySelector(".intro3").textContent
+            hostel_intro: box.querySelector(".intro3").textContent,
+            price: box.querySelector(".rent3").textContent
+
            
 
 
@@ -96,6 +108,12 @@ boxes3.forEach((box)=>{
         
 
         localStorage.setItem("clicked_add", JSON.stringify(details));
+
+        localStorage.removeItem("Clickedbox");
+
+        localStorage.removeItem("Clickedbox2");
+
+        
 
 
 

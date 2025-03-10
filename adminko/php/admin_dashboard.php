@@ -55,22 +55,22 @@ include("./admin_sidebar.php");
             <p class="total_no_of_users">
 
 
-                <?php
+                    <?php
 
-                include("/xampp2/htdocs/hbs/forms/dbconnect.php");
+                    include("/xampp2/htdocs/hbs/forms/dbconnect.php");
 
-                $sql = "SELECT COUNT(*) as total FROM register";
-                $result = mysqli_query($conn, $sql);
-                $row = mysqli_fetch_assoc($result);
-                $_SESSION["row_count"] = $row["total"];
+                    $sql = "SELECT COUNT(*) as total FROM register";
+                    $result = mysqli_query($conn, $sql);
+                    $row = mysqli_fetch_assoc($result);
+                    $_SESSION["row_count"] = $row["total"];
 
-                if (isset($_SESSION["row_count"])) {
-                    echo $_SESSION["row_count"];
-                }
+                    if (isset($_SESSION["row_count"])) {
+                        echo $_SESSION["row_count"];
+                    }
 
-                mysqli_close($conn);
+                    mysqli_close($conn);
 
-                ?>
+                    ?>
 
 
             </p>
@@ -91,8 +91,27 @@ include("./admin_sidebar.php");
                 </svg>
             </span>
 
-            <p class="total_no_of_paid_users">0 </p>
-            <a href="user_management.html"> <button class="For_details">For details...</button> </a>
+            <p class="total_no_of_paid_users">
+                
+                  <?php
+
+                    include("/xampp2/htdocs/hbs/forms/dbconnect.php");
+
+                    $sql = "SELECT COUNT(*) as total FROM user_management WHERE status = 'success'";
+                    $result = mysqli_query($conn, $sql);
+                    $row = mysqli_fetch_assoc($result);
+                    $_SESSION["paid_user_count"] = $row["total"];
+
+                    if (isset($_SESSION["paid_user_count"])) {
+                        echo $_SESSION["paid_user_count"];
+                    }
+
+                    mysqli_close($conn);
+
+                   ?>
+                
+        </p>
+            <a href="user_management.php"> <button class="For_details">For details...</button> </a>
 
 
         </div>
@@ -107,8 +126,28 @@ include("./admin_sidebar.php");
                 </svg>
             </span>
 
-            <p class="total_no_of_unpaid_users">0 </p>
-            <a href="user_management.html"> <button class="For_details">For details...</button> </a>
+            <p class="total_no_of_unpaid_users">
+
+                                        
+                <?php
+
+                include("/xampp2/htdocs/hbs/forms/dbconnect.php");
+
+                $sql = "SELECT COUNT(*) as total FROM user_management WHERE status ='pending'";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                $_SESSION["unpaid_user"] = $row["total"];
+
+                if (isset($_SESSION["unpaid_user"])) {
+                    echo $_SESSION["unpaid_user"];
+                }
+
+                mysqli_close($conn);
+
+                ?>
+                
+        </p>
+            <a href="user_management.php"> <button class="For_details">For details...</button> </a>
 
 
         </div>
@@ -130,28 +169,28 @@ include("./admin_sidebar.php");
 
 
 
-include("/xampp2/htdocs/hbs/forms/dbconnect.php");
+            include("/xampp2/htdocs/hbs/forms/dbconnect.php");
 
-// $jsonhostel = 240;
+            $jsonhostel = 12;
 
-$sql = "SELECT COUNT(*) as total FROM hostel_management";
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
-$_SESSION["totalhostel"] = $row["total"];
+            $sql = "SELECT COUNT(*) as total FROM hostel_management";
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION["totalhostel"] = $row["total"];
 
-if (isset($_SESSION["totalhostel"])) {
-    echo $_SESSION["totalhostel"];
-}
+            if (isset($_SESSION["totalhostel"])) {
+                echo $_SESSION["totalhostel"] +$jsonhostel;
+            }
 
-mysqli_close($conn);
+            mysqli_close($conn);
 
-?>
+            ?>
 
 
 
 
             </p>
-            <a href="hostel_management.php"><button class="For_details">For details...</button> </a>
+            <a href="user_management.php"><button class="For_details">For details...</button> </a>
 
         </div>
 
@@ -166,8 +205,8 @@ mysqli_close($conn);
                         d="M441-120v-86q-53-12-91.5-46T293-348l74-30q15 48 44.5 73t77.5 25q41 0 69.5-18.5T587-356q0-35-22-55.5T463-458q-86-27-118-64.5T313-614q0-65 42-101t86-41v-84h80v84q50 8 82.5 36.5T651-650l-74 32q-12-32-34-48t-60-16q-44 0-67 19.5T393-614q0 33 30 52t104 40q69 20 104.5 63.5T667-358q0 71-42 108t-104 46v84h-80Z" />
                 </svg></span>
 
-            <p class="total_earnings">0 </p>
-            <a href="user_management.html"><button class="For_details">For details...</button> </a>
+            <p class="total_earnings">19999 </p>
+            <a href="user_management.php"><button class="For_details">For details...</button> </a>
 
         </div>
 
@@ -182,7 +221,36 @@ mysqli_close($conn);
                         d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190ZM480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z" />
                 </svg></span>
 
-            <p class="total_no_of_rooms">86 </p>
+            <p class="total_no_of_rooms">
+
+                   
+            <?php
+
+
+
+            include("/xampp2/htdocs/hbs/forms/dbconnect.php");
+
+            $jsonrooms = 34;
+
+            $sql = "SELECT COUNT(*) as total FROM hostel_management";
+            $result = mysqli_query($conn, $sql);
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION["totalhostel"] = $row["total"];
+
+            if (isset($_SESSION["totalhostel"])) {
+                echo $_SESSION["totalhostel"]+$jsonrooms;
+            }
+
+            mysqli_close($conn);
+
+            ?>
+                
+        
+        
+        
+        
+        
+        </p>
             <a href="user_management.html"> <button class="For_details">For details...</button> </a>
 
         </div>

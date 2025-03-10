@@ -27,7 +27,7 @@ include("/xampp2/htdocs/hbs/forms/dbconnect.php");
     <tr>
       <th>id </th>
       <th>first_name</th>
-      <th>middle_name</th>
+      <!-- <th>middle_name</th> -->
       <th>last_name</th>
       <th>address</th>
       <th>number</th>
@@ -36,8 +36,9 @@ include("/xampp2/htdocs/hbs/forms/dbconnect.php");
       <th>no_of_rooms</th>
       <th>booking_date</th>
       <th>arrival_date</th>
-      <th>departure_date</th>
+      <!-- <th>departure_date</th> -->
       <th>price</th>
+      <th>status</th>
       <th>Operations</th>
       
       
@@ -56,7 +57,7 @@ if($result){
     while($row = mysqli_fetch_assoc($result)){
         $id = $row['id'];
         $first_name = $row['first_name'];
-        $middle_name = $row['middle_name'];
+        // $middle_name = $row['middle_name'];
         $last_name = $row['last_name'];
         $address = $row['address'];
         $number = $row['number'];
@@ -65,14 +66,15 @@ if($result){
         $number_of_rooms = $row['no_of_rooms'];
         $booking_date = $row['booking_date'];
         $arrival_date = $row['arrival_date'];
-        $departure_date = $row['departure_date'];
-        $price = $row['price'];
+        // $departure_date = $row['departure_date'];
+        $price= $row['price'];
+        $status= $row['status'];
 
         echo ' <tr>
       <td>'.$id.'</td>
     
       <td>'.$first_name.'</td>
-      <td>'.$middle_name.'</td>
+   
       <td>'.$last_name.'</td>
       <td>'.$address.'</td>
       <td>'.$number.'</td>
@@ -81,11 +83,12 @@ if($result){
       <td>'.$number_of_rooms.'</td>
       <td>'.$booking_date.'</td>
       <td>'.$arrival_date.'</td>
-      <td>'.$departure_date.'</td>
+      
       <td>'.$price.'</td>
+        <td>'.$status.'</td>
         <td>
 
-            <a class="btn btn-primary mb-2 text-light" href="user_update.php?updateid='.$id.'">Update</a>
+            <a class="btn btn-primary mb-2 text-light" href="user_update.php?updateid='.$id.'">Update</a><br>
            <a class="btn btn-danger mb-2 text-light" href="user_delete.php?deleteid='.$id.'">Delete</a>
 
         </td>
